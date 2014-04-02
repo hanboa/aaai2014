@@ -4,6 +4,7 @@
 \usepackage{times}
 \usepackage{helvet}
 \usepackage{courier}
+\usepackage{graphicx}
 \frenchspacing
 \setlength{\pdfpagewidth}{8.5in}
 \setlength{\pdfpageheight}{11in}
@@ -37,8 +38,14 @@ According to promising neural science theory and the high performance of algorit
 
 Some people have images search problem with the representation of sparse codes proposed by (Ge et al. 2013). However, finding sparse codes has high computational costs on doing effective real time search. We propose a novel approach to solve this problem by using overcomplete basis in dictionary rather than computing sparse codes and we will show that our approach is effective in natural image. 
 
+\begin{figure}[h]
+\includegraphics{dict}
+\end{figure}
+
 \section{Preprocessing-Unsupervised dictionary learning}
 Sparse-based dictionary learning has proven been effective in natural images which are mostly scene image. Given input unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases. (dictioanry圖)
+
+
 
 \section{System framework}
 Given a query natural image, we firstly decorrelate the image to equalize the variance which is also employed in preprocessing for dictionary due to potential factual and corrupted and this also roughly simulate spatial-frequency reponse characteristic of retinal ganglion cells proposed by (Olshausen 1997) in our cognitive system.  We then uniformly select several image patches to extract a certain pattern of the image. We feed all extracted vectors into our auto-learned feature selection algorithms to encode the data. Finally, we use L2 distance as default metric to compute similarity score. The system diagram is shown in Figure 2.
@@ -84,6 +91,28 @@ Dalal, Navneet, and Bill Triggs. "Histograms of oriented gradients for human det
 
 CACM survey of LSH (2008): "Near-Optimal Hashing Algorithms for Approximate Nearest Neighbor in High Dimensions" (by Alexandr Andoni and Piotr Indyk).Communications of the ACM, vol. 51, no. 1, 2008, pp. 117-122. 
 directly from CACM 
+
+\section{key sentence}
+Critical question or point we had better contain or answer:
+\textbf{
+\begin{itemize}
+\item	software systems: emulate actual neurophysiological mechanisms and algorithms that support human cognition
+\item	what are the emerging machine learning technologies that address the big data challenges implied by cognitive computing applications?
+\item	How can cognitive computing techniques improve human computation, and what demands do the latter put on the former?
+\item	Sparsity-based techniques and process unstructured data
+\end{itemize}
+}
+Our point:
+\textbf{
+\begin{itemize}
+\item	sparse coding
+\item	images patches rather than human-turned feature extraction
+\item	unsupervised dictionary learning
+\item	hashing rather than sparse code computing
+\item	large-scale data search (future work and our vision)
+\item	effective similarity preservation by auto-learned feature selection algorithm
+\end{itemize}
+}
 
 \smallskip \noindent \textit{Book with Multiple Authors}\\
 Engelmore, R., and Morgan, A. eds. 1986. \textit{Blackboard Systems.} Reading, Mass.: Addison-Wesley.
