@@ -16,11 +16,11 @@
 % The file aaai.sty is the style file for AAAI Press 
 % proceedings, working notes, and technical reports.
 %
-\title{Formatting Instructions \\for Authors Using \LaTeX{}}
-\author{AAAI Press\\
-Association for the Advancement of Artificial Intelligence\\
-2275 East Bayshore Road, Suite 160\\
-Palo Alto, California 94303\\
+\title{Efficiently Retrieving Images that We Perceived as Similar}
+\author{Hui-Ju Katherine Chiang$^{1}$, Shih-Han Wang$^{2}$\\
+$^{1}$Graduate Institute of Electronics Engineering, National Taiwan University, Taipei 10617, Taiwan\\
+$^{2}$Graduate Institute of Networking and Multimedia, National Taiwan University, Taipei 10617, Taiwan\\
+\{d01943033, r02944022\}@ntu.edu.tw
 }
 \maketitle
 \begin{abstract}
@@ -50,6 +50,7 @@ Sparse-based dictionary learning has proven been effective in natural images whi
 
 
 \section{System framework}
+%% FLOW CHART %TODO
 Given a query natural image, we firstly decorrelate the image to equalize the variance which is also employed in preprocessing for dictionary due to potential factual and corrupted and this also roughly simulate spatial-frequency reponse characteristic of retinal ganglion cells proposed by (Olshausen 1997) in our cognitive system.  We then uniformly select several image patches to extract a certain pattern of the image. We feed all extracted vectors into our auto-learned feature selection algorithms to encode the data. Finally, we use L2 distance as default metric to compute similarity score. The system diagram is shown in Figure 2.
 
 \section{Auto-learned feature selection algorithms}
