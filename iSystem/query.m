@@ -30,6 +30,7 @@ path = '../queries/*.*g';
 imgs = dir(path);
 i = numQuery;
 img_path = filename;
+reentrance = 50;
 
 % show query image
 scrsz = get(0,'ScreenSize');
@@ -84,7 +85,7 @@ for iteration = 1 : 10
        %display( sprintf('Checking Database: [%d/%d]', j,length(database)) );
     end
     [querySet(i).sortedValues querySet(i).sortedIndex] = sort(querySet(i).difference);
-    for j = 1 : numRetrieve,
+    for j = 1 : reentrance, % numRetrieve
         index = querySet(i).sortedIndex(j);
         totalCount(index,1) = totalCount(index,1)*1.2;
     end
