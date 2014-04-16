@@ -18,11 +18,11 @@
 %
 \begin{document}
 \title{Efficiently Retrieving Images that We Perceived as Similar}
-\author{Hui-Ju Katherine Chiang$^{1}$, Shih-Han Wang$^{2}$, Jane Yung-jen Hsu$^{2}$\\
-$^{1}$Graduate Institute of Electronics Engineering, National Taiwan University, Taipei 10617, Taiwan\\
-$^{2}$Graduate Institute of Networking and Multimedia, National Taiwan University, Taipei 10617, Taiwan\\
-\{d01943033, r02944022\}@ntu.edu.tw, yjhsu@cise.ntu.edu.tw
-}
+%\author{Hui-Ju Katherine Chiang$^{1}$, Shih-Han Wang$^{2}$, Jane Yung-jen Hsu$^{2}$\\
+%$^{1}$Graduate Institute of Electronics Engineering, National Taiwan University, Taipei 10617, Taiwan\\
+%$^{2}$Graduate Institute of Networking and Multimedia, National Taiwan University, Taipei 10617, Taiwan\\
+%\{d01943033, r02944022\}@ntu.edu.tw, yjhsu@cise.ntu.edu.tw
+%}
 \maketitle
 \begin{abstract}
 \begin{quote}
@@ -32,7 +32,10 @@ Despite growing interest in using sparse coding based methods for image classifi
 \end{abstract}
 
 \section{Motivation and Introduction}
-Similar image retrieval has become an important problem with many real-world applications in artificial intelligence field. To be able to process the growing amount of data, more efficient and reliable algorithms are needed. Until now, there is still a lack of an effective guideline to decide similarity for a computer, though the problem posts no difficulty to human beings. This motivated us to incorporate the biology-inspired sparse coding and hashing techniques for more intuitive, real time retrieval results.
+As the amount of digital data grows in unprecedented speed, new opportunities come with new challenges. The real value of big data lies in the ability to extract from it meaningful, even insightful information, rather than the ``big'' itself. Furthermore, many applications also require information to be retrieved \emph{fast}.
+\emph{Efficient} similar image retrieval thus becomes an important problem in the field of artificial intelligence with many real-world applications. 
+The task is closely related to the nature of \emph{human cognition} since any definition of \emph{similarity} is meaningful only when it coincides with human feeling. Though the similar-or-not decision comes intuitively in no time for human, to find a well-defined decision guideline for computers is extremely hard. To resolve this stark discrepency that can inhibit human-machine cooperation, in this paper, we propose a novel method that emulates actual neurophysiological mechanisms including \emph{sparse coding} in primary visual cortex (V1), \emph{synaptic plasticity}, and \emph{mutual inhibition} between neurons. 
+
 There are many researches studying about how to make image retrieval effective. Conventionally, there are three steps in large-scale content-based image retrieval when given a set of indexed images and a query image. The first is feature extraction. Many complex approaches are developed to find effective image representation to encode a variety of images. Secondly, dimension reduction is important to speed up the retrieval process. Finally, effective metric is needed to compute the similarity between features. Compared to the traditional framework we propose a different solution without the part of feature extraction to solve this problem by the plausible model of visual cortex—sparse coding.
 
 Sparse representation based on an \emph{overcomplete} basis (Olshausen and Field 1996), inspired by mammalian striate cortex mechanism from neural science community has been widely applied in many computer science fields, such as data compression, speech recognition and image denoising,  etc. (Sivaram 2010), (Wright et al. 2009).  One important property of sparse coding is that it can extract from data higher-level features that are actually more cognitively effective than hand-picked ones by simulating partial activity of neurons.  
@@ -47,7 +50,7 @@ Some people have images search problem with the representation of sparse codes p
 		\label{dictionary}
 \end{figure}
 
-\section{Preprocessing-Unsupervised dictionary learning}
+\section{Offline Unsupervised Dictionary Learning}
 Sparse-based dictionary learning has proven been effective in natural images which are mostly scene image. Given input unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases. %(dictioanry圖)
 
 \begin{figure}[!ht]
@@ -154,6 +157,7 @@ Rather than traditional human-turned feature extraction our cognitive system bas
 \section{How to work with big data?}
 When the world is filled with big data, effective approach is needed to deal with such a challenge.  Large-scale image with effective and reliable performance is one of examples. Recently, we are attempting to address an open question if there is new approach based our framework to handle this old but not well-solved problem. Our work lies in how we design the connection between visual neuron encoding simulation and image retrieval problem and how we investigate an effective large-sale image retrieval new candidate.
 
+Dictionary is trained off-line, and can take full advantage of the large amount of data.
 \subsection{References} 
 Ge, Tiezheng, Qifa Ke, and Jian Sun. "Sparse-Coded Features for Image Retrieval." (2013).
 

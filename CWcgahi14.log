@@ -1,14 +1,24 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  16 APR 2014 10:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  16 APR 2014 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **CWcgahi14.tex
 (./CWcgahi14.tex
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,40 +35,40 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 ) (./aaai.sty
 Conference Style for AAAI for LaTeX 2e -- version of 1 December 2013
 \titlebox=\skip43
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/times.sty
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/helvet.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/courier.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
@@ -89,10 +99,10 @@ LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 19.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
 \scratchdimen=\dimen105
@@ -105,15 +115,15 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \MPnumerator=\count92
 \makeMPintoPDFobject=\count93
 \everyMPtoPDFconversion=\toks16
-) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -122,22 +132,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -149,7 +159,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -161,19 +171,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 26.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 26.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
+
+LaTeX Warning: No \author given.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 26.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -186,161 +191,168 @@ Missing character: There is no ” in font ptmr7t!
 File: figures_dir/dict.png Graphic file (type png)
 
 <use figures_dir/dict.png>
-Package pdftex.def Info: figures_dir/dict.png used on input line 45.
+Package pdftex.def Info: figures_dir/dict.png used on input line 48.
 (pdftex.def)             Requested size: 202.3529pt x 185.8168pt.
- [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-
-
- <./figures_dir/dict.png>]
-<figures_dir/system_query.png, id=16, 1000.73875pt x 466.74374pt>
+<figures_dir/system_query.png, id=3, 1000.73875pt x 466.74374pt>
 File: figures_dir/system_query.png Graphic file (type png)
 
 <use figures_dir/system_query.png>
-Package pdftex.def Info: figures_dir/system_query.png used on input line 55.
+Package pdftex.def Info: figures_dir/system_query.png used on input line 58.
 (pdftex.def)             Requested size: 202.3529pt x 94.37265pt.
+ [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-<figures_dir/temp_algorithm1.png, id=17, 754.82pt x 464.73625pt>
+
+
+]
+<figures_dir/temp_algorithm1.png, id=13, 754.82pt x 464.73625pt>
 File: figures_dir/temp_algorithm1.png Graphic file (type png)
 
 <use figures_dir/temp_algorithm1.png>
-Package pdftex.def Info: figures_dir/temp_algorithm1.png used on input line 75.
+Package pdftex.def Info: figures_dir/temp_algorithm1.png used on input line 78.
 
 (pdftex.def)             Requested size: 202.3529pt x 124.58696pt.
 
-<figures_dir/temp_algorithm2.png, id=18, 619.31375pt x 321.2pt>
+<figures_dir/temp_algorithm2.png, id=14, 619.31375pt x 321.2pt>
 File: figures_dir/temp_algorithm2.png Graphic file (type png)
 
 <use figures_dir/temp_algorithm2.png>
-Package pdftex.def Info: figures_dir/temp_algorithm2.png used on input line 84.
+Package pdftex.def Info: figures_dir/temp_algorithm2.png used on input line 87.
 
 (pdftex.def)             Requested size: 202.3529pt x 104.94748pt.
-
+ [2 <./figures_dir/dict.png> <./figures_dir/system_query.png> <./figures_dir/te
+mp_algorithm1.png> <./figures_dir/temp_algorithm2.png>]
 <figures_dir/cottage_garden_top10_comparison.jpg, id=19, 1204.5pt x 903.375pt>
 File: figures_dir/cottage_garden_top10_comparison.jpg Graphic file (type jpg)
 
 <use figures_dir/cottage_garden_top10_comparison.jpg>
 Package pdftex.def Info: figures_dir/cottage_garden_top10_comparison.jpg used o
-n input line 95.
+n input line 98.
 (pdftex.def)             Requested size: 202.3529pt x 151.76596pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
- [2 <./figures_dir/system_query.png> <./figures_dir/temp_algorithm1.png> <./fig
-ures_dir/temp_algorithm2.png>] <figures_dir/bamboo_forest.jpg, id=23, 803.0pt x
- 401.5pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+
+<figures_dir/bamboo_forest.jpg, id=20, 803.0pt x 401.5pt>
 File: figures_dir/bamboo_forest.jpg Graphic file (type jpg)
 
 <use figures_dir/bamboo_forest.jpg>
-Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 128.
+Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 131.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
-<figures_dir/bamboo_10queries.jpg, id=24, 963.6pt x 722.7pt>
+<figures_dir/bamboo_10queries.jpg, id=21, 963.6pt x 722.7pt>
 File: figures_dir/bamboo_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/bamboo_10queries.jpg>
-Package pdftex.def Info: figures_dir/bamboo_10queries.jpg used on input line 12
-9.
+Package pdftex.def Info: figures_dir/bamboo_10queries.jpg used on input line 13
+2.
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
 
-<figures_dir/beach.jpg, id=25, 803.0pt x 401.5pt>
+<figures_dir/beach.jpg, id=22, 803.0pt x 401.5pt>
 File: figures_dir/beach.jpg Graphic file (type jpg)
  <use figures_dir/beach.jpg>
-Package pdftex.def Info: figures_dir/beach.jpg used on input line 136.
+Package pdftex.def Info: figures_dir/beach.jpg used on input line 139.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
-<figures_dir/beach_10queries.jpg, id=26, 963.6pt x 722.7pt>
+<figures_dir/beach_10queries.jpg, id=23, 963.6pt x 722.7pt>
 File: figures_dir/beach_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/beach_10queries.jpg>
-Package pdftex.def Info: figures_dir/beach_10queries.jpg used on input line 137
+Package pdftex.def Info: figures_dir/beach_10queries.jpg used on input line 140
 .
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
 
-<figures_dir/corridor.jpg, id=27, 803.0pt x 401.5pt>
+<figures_dir/corridor.jpg, id=24, 803.0pt x 401.5pt>
 File: figures_dir/corridor.jpg Graphic file (type jpg)
 
 <use figures_dir/corridor.jpg>
-Package pdftex.def Info: figures_dir/corridor.jpg used on input line 144.
+Package pdftex.def Info: figures_dir/corridor.jpg used on input line 147.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
-<figures_dir/corridor_10queries.jpg, id=28, 963.6pt x 722.7pt>
+<figures_dir/corridor_10queries.jpg, id=25, 963.6pt x 722.7pt>
 File: figures_dir/corridor_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/corridor_10queries.jpg>
 Package pdftex.def Info: figures_dir/corridor_10queries.jpg used on input line 
-145.
+148.
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
  [3 <./figures_dir/cottage_garden_top10_comparison.jpg> <./figures_dir/bamboo_f
-orest.jpg> <./figures_dir/bamboo_10queries.jpg> <./figures_dir/beach.jpg> <./fi
-gures_dir/beach_10queries.jpg>]
-Underfull \hbox (badness 2065) in paragraph at lines 162--163
+orest.jpg> <./figures_dir/bamboo_10queries.jpg>]
+Underfull \hbox (badness 2065) in paragraph at lines 166--167
 []\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 166--167
+Underfull \hbox (badness 1226) in paragraph at lines 170--171
 \OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 174--176
+Underfull \hbox (badness 2277) in paragraph at lines 178--180
 \OT1/ptm/m/n/10 ing Al-go-rithms for Ap-prox-i-mate Near-est Neigh-bor in
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 174--176
+Underfull \hbox (badness 1152) in paragraph at lines 178--180
 \OT1/ptm/m/n/10 High Di-men-sions" (by Alexandr An-doni and Pi-otr In-
  []
 
 
 LaTeX Font Warning: Font shape `OMS/ptm/bx/n' undefined
 (Font)              using `OMS/ptm/m/n' instead
-(Font)              for symbol `textbullet' on input line 186.
+(Font)              for symbol `textbullet' on input line 190.
 
 LaTeX Font Info:    Font shape `OMS/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 186.
-[4 <./figures_dir/corridor.jpg> <./figures_dir/corridor_10queries.jpg>]
-[5]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 267.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 190.
+[4 <./figures_dir/beach.jpg> <./figures_dir/beach_10queries.jpg> <./figures_dir
+/corridor.jpg> <./figures_dir/corridor_10queries.jpg>] [5]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 289.
+(Font)              <12> on input line 271.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 271.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 271.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 271.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 293.
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--319
+Underfull \hbox (badness 10000) in paragraph at lines 284--323
 \OMS/cmsy/m/n/9 n\OT1/ptm/m/n/9 setlength\OMS/cmsy/m/n/9 fn\OT1/ptm/m/n/9 pdfpa
 gewidth\OMS/cmsy/m/n/9 gf\OT1/ptm/m/n/9 8.5in\OMS/cmsy/m/n/9 g
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 321.
+(Font)              <10.95> on input line 325.
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--343
+Underfull \hbox (badness 10000) in paragraph at lines 340--347
 
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 345--346
-\OT1/ptm/m/n/10 The fol-low-ing pack-ages are in-com-pat-i-ble with aaai.sty
  []
 
 [6]
-Underfull \hbox (badness 3333) in paragraph at lines 380--384
+Underfull \hbox (badness 1281) in paragraph at lines 349--350
+\OT1/ptm/m/n/10 The fol-low-ing pack-ages are in-com-pat-i-ble with aaai.sty
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 384--388
 []\OT1/ptm/m/n/10 This com-mand is usu-ally suf-fi-cient to change the
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 380--384
+Underfull \hbox (badness 3965) in paragraph at lines 384--388
 \OT1/ptm/m/n/10 for-mat. Some-times, how-ever, it may not work. Use
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 392--394
+Underfull \hbox (badness 1087) in paragraph at lines 396--398
 \OMS/cmsy/m/n/10 n\OT1/ptm/m/n/10 abovedisplayskip, \OMS/cmsy/m/n/10 n\OT1/ptm/
 m/n/10 belowdisplayskip, and \OMS/cmsy/m/n/10 n\OT1/ptm/m/n/10 arraycolsep.
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 395--396
+Underfull \hbox (badness 2035) in paragraph at lines 399--400
 \OT1/ptm/m/n/10 in-clude \OMS/cmsy/m/n/10 n\OT1/ptm/m/n/10 columnsep, \OMS/cmsy
 /m/n/10 n\OT1/ptm/m/n/10 topmargin, \OMS/cmsy/m/n/10 n\OT1/ptm/m/n/10 topskip, 
 \OMS/cmsy/m/n/10 n\OT1/ptm/m/n/10 textheight,
@@ -348,29 +360,29 @@ Underfull \hbox (badness 2035) in paragraph at lines 395--396
 
 [7]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 415.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 419.
 
-Underfull \hbox (badness 1264) in paragraph at lines 415--417
+Underfull \hbox (badness 1264) in paragraph at lines 419--421
  \OT1/ptm/b/n/10 Ob-tain-ing Type 1 Com-puter Mod-ern for L[]T[]X. \OT1/ptm/m/n
 /10 If
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 415--417
+Underfull \hbox (badness 1281) in paragraph at lines 419--421
 \OT1/ptm/m/n/10 pa-per (you can-not use it for the text) you may need
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 468--471
+Underfull \hbox (badness 1092) in paragraph at lines 472--475
 \OT1/ptm/m/n/10 If the ti-tle and au-thor in-for-ma-tion does not fit in the
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 473.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 477.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1231) in paragraph at lines 473--476
+Underfull \hbox (badness 1231) in paragraph at lines 477--480
 \OT1/ptm/m/n/10 The copy-right no-tice au-to-mat-i-cally ap-pears if you use
  []
 
@@ -381,54 +393,56 @@ Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¿ in font ptmr7t!
 Missing character: There is no ½ in font ptmr7t!
 [8]
-Underfull \hbox (badness 3209) in paragraph at lines 524--525
+Underfull \hbox (badness 3209) in paragraph at lines 528--529
  \OT1/ptm/b/n/10 Sec-tion Head-ings. \OT1/ptm/m/n/10 Sec-tions should be ar-ran
 ged and
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 527--528
+Underfull \hbox (badness 1248) in paragraph at lines 531--532
 \OT1/ptm/m/n/10 ``Ac-knowl-edg-ments." This sec-tion in-cludes ac-knowl-edg-
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 530--531
+Underfull \hbox (badness 2158) in paragraph at lines 534--535
  \OT1/ptm/b/n/10 Ap-pen-dices. \OT1/ptm/m/n/10 Any ap-pen-dices fol-low the ac-
 knowl-edg-
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 533--534
+Underfull \hbox (badness 2035) in paragraph at lines 537--538
  \OT1/ptm/b/n/10 Ref-er-ences \OT1/ptm/m/n/10 The ref-er-ences sec-tion should 
 be la-beled
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 541--542
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
  \OT1/ptm/b/n/10 Low-Resolution Bitmaps. \OT1/ptm/m/n/10 You may not use low-
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 541--542
+Underfull \hbox (badness 5403) in paragraph at lines 545--546
 \OT1/ptm/m/n/10 resolution (such as 72 dpi) screen-dumps and GIF
  []
 
 [9] [10]
-Underfull \hbox (badness 1028) in paragraph at lines 666--667
+Underfull \hbox (badness 1028) in paragraph at lines 670--671
 \OT1/ptm/m/n/10 L[]T[]X is a dif-fi-cult pro-gram to mas-ter. If you've used
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 666--667
+Underfull \hbox (badness 1389) in paragraph at lines 670--671
 \OT1/ptm/m/n/10 that soft-ware, and this doc-u-ment didn't help or some
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 666--667
+Underfull \hbox (badness 1087) in paragraph at lines 670--671
 \OT1/ptm/m/n/10 2002/08/13) about ob-tain-ing cor-rect PS/PDF out-put on
  []
 
-[11] (./CWcgahi14.aux)
+[11] [12
+
+] (./CWcgahi14.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -437,26 +451,24 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1736 strings out of 493315
- 26137 string characters out of 6137905
- 88225 words of memory out of 5000000
- 5146 multiletter control sequences out of 15000+600000
- 31388 words of font info for 60 fonts, out of 8000000 for 9000
+ 1737 strings out of 493488
+ 26141 string characters out of 3141326
+ 84606 words of memory out of 3000000
+ 5002 multiletter control sequences out of 15000+200000
+ 31388 words of font info for 60 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,11n,23p,982b,254s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on CWcgahi14.pdf (11 pages, 1206126 bytes).
+ 37i,10n,23p,982b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on CWcgahi14.pdf (12 pages, 1191482 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
