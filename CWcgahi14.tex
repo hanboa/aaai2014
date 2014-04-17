@@ -40,7 +40,7 @@ that emulates several important aspects of actual neurophysiological mechanisms,
 
 Given unlabeled data, \emph{sparse coding} provides a class of algorithms capable of extracting higher-level features that are actually more cognitively effective than hand-picked ones by emulating partial activity of neurons. The features can be regarded as the most representative building blocks by which the input data can be reconstructed most \emph{efficiently} -- highest accuracy with fewest elements used. The features form the \emph{overcomplete} bases that resemble the \emph{receptive fields} of neurons of in the visual cortex, making sparse coding a more appropriate medium than other widely-used computer vision features such as SIFT (Lowe 1999), GIST (Oliva et al. 2001), HOG (Dalal et al. 2005) etc., to bridge human cognition and algorithmic way of learning.
 
-Unfortunately, though there are works (Ge et al. 2013) that tackle the similar image search problem by first representing query images as their sparse codes, the high computational cost involved in sparse code calculation renders it infeasible for (near) realtime retrieval tasks. Thus, we proposed in this paper a novel approach to overcome the performance bottleneck by a change of perspective: equipped with already-learned features, can we filter out the dominant features \emph{directly} from an image, without resorting to the complete set of its sparse code? By regarding those selected features collectively as the image's \emph{hash value}, the method actually transforms the sparse coding based approach to one more similar to efficient hash-based methods. 
+Unfortunately, though there are works (Ge et al. 2013) that tackle the similar image search problem by first representing query images as their sparse codes, the high computational cost involved in sparse code calculation renders it infeasible for (near) realtime retrieval tasks. Thus, we proposed in this paper a novel approach to overcome the performance bottleneck by a change of perspective: equipped with already-learned features, can we filter out the dominant features \emph{directly} from an image, without resorting to the \emph{complete} set of its sparse code? By regarding those selected features collectively as the image's \emph{hash value}, the method actually transforms the sparse coding based approach to one more similar to efficient hash-based methods. 
 
 Considering the fact that sparse representation is based on an \emph{overcomplete} basis (Olshausen and Field 1996), we use concepts similar to that of inner-products and orthogonal decompositions to aid our feature selection. By combining the inhibition-like decomposition scheme with an additional mechanism that emulates synaptic plasticity, we are able to come up with a retrieval system with hash-based-like efficiency, and performance comparable to GIST-based approach. Experiments based on \emph{SUN397 scene benchmark} confirmed  the effectiveness and efficiency of our method.
 
@@ -56,25 +56,29 @@ Considering the fact that sparse representation is based on an \emph{overcomplet
 \subsection{System framework}
 \label{subsec:framework}
 
-\begin{figure}[!ht]
+\begin{figure}[!h]
 		\centering
 		\includegraphics[width=3.0in]{figures_dir/system_query.png}
 		\caption{Proposed system.}
 		\label{fig:framework}
 \end{figure}
-Given a query natural image, we firstly decorrelate the image to equalize the variance which is also employed in preprocessing for dictionary due to potential factual and corrupted and this also roughly simulate spatial-frequency reponse characteristic of retinal ganglion cells proposed by (Olshausen 1997) in our cognitive system.  We then uniformly select several image patches to extract a certain pattern of the image. We feed all extracted vectors into our auto-learned feature selection algorithms to encode the data. Finally, we use L2 distance as default metric to compute similarity score. The system diagram is shown in Fig.~\ref{fig:framework}.
+\subsection{Image Preprocessing}
+Before feeding into the system, all images including those used for dictionary training are whitened to...
+ 
+%Given a query natural image, we firstly decorrelate the image to equalize the variance which is also employed in preprocessing for dictionary due to potential factual and corrupted and this also roughly simulate spatial-frequency reponse characteristic of retinal ganglion cells proposed by (Olshausen 1997) in our cognitive system.  We then uniformly select several image patches to extract a certain pattern of the image. We feed all extracted vectors into our auto-learned feature selection algorithms to encode the data. Finally, we use L2 distance as default metric to compute similarity score. The system diagram is shown in Fig.~\ref{fig:framework}.
 
 \subsection{Offline Unsupervised Dictionary Learning}
 \label{subsec:dictionary}
-Sparse-based dictionary learning has proven been effective in natural images which are mostly scene image. Given input unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases. %(dictioanry圖)
+Sparse-based dictionary learning has been proved to be especially effective in capturing discriminative features of scene images. 
+%Given unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases.
 \begin{figure}[!ht]
 		\centering
 		\includegraphics[width=2.2in]{figures_dir/dict.png}
 		\caption{The Learned Dictionary}
 		\label{dictionary}
 \end{figure}
-
-\subsection{Auto-learned feature selection algorithms}
+\subsection{Hash Value Generation}
+\subsubsection{Inhibitive Feature Selection Algorithm}
 Since our retrieval framework encode the image pattern of natural images into sparsity-based dictionary, we are motivated to select effective feature, especially those have high response to patches of natural images. Inspired by localitive sensitive hashing proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserving promise, we propose our novel algorithm to find out the atom of feature pattern in the dictionary to perform our hash-based dimensional reduction.
 
 Firstly, we project our patches vector onto the atom of dictionary to get the highest values of the result for each vector of patches and have another zero array with the same size. We call those atoms strong responsive to the corresponding patches vector. Then, we set the value of each patches vector at corresponding atom of dictionary to be one.
@@ -86,11 +90,11 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
 		\centering
 		\includegraphics[width=.4\textwidth]{figures_dir/temp_algorithm1.png}
 		\caption{Auto-learned feature selection algorithm (ALFSA)}
-		\label{TEMP!!!Auto-learned feature selection algorithm (ALFSA)}
+		\label{TEMP!!! Inhibitive Feature Selection Algorithm}
 \end{figure}
 
-
-\section{Response Reactivation Scoring}
+\subsubsection{Synaptic Plasticity Reactivation Scoring}
+%{Response Reactivation Scoring}
 \begin{figure}[!ht]
 		\centering
 		\includegraphics[width=.4\textwidth]{figures_dir/temp_algorithm2.png}
@@ -100,7 +104,8 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
 
 
 \section{Experimental results}
-We evaluate our approach on a subset of scene images which is a version of MIT SUN dataset, SUN397 scene benchmark, from (!!!).  Our subdataset consist of 3,583 scene images that have been grouped into 10 different classes: bamboo\_forest, beach, botanical\_garden, corridor, cottage\_garden, hayfield, mountain\_snowy, waterfallBlock, wheat\_field, wine\_cellearBarrelStorage. Original images in the dataset have different sizes so we resize them into the size of 200x200 pixels. Rather than represent them with the state of the art manual-turned feature, we extract small 14x14 pixels image patches directly by uniform random selection. We call our auto-learned feature selection method ALFS and we will evaluate our method in two parts, the improvement, from naive method to our design alogrithm showing the progress,under our sparsity dictionary and the comparison with the well known human-turned global feature, GIST.
+We evaluate our proposed system on a subset of SUN397 database
+%We evaluate our proposed system on a subset of scene images which is a version of MIT SUN dataset, SUN397 scene benchmark, from (!!!).  Our subdataset consist of 3,583 scene images that have been grouped into 10 different classes: bamboo\_forest, beach, botanical\_garden, corridor, cottage\_garden, hayfield, mountain\_snowy, waterfallBlock, wheat\_field, wine\_cellearBarrelStorage. Original images in the dataset have different sizes so we resize them into the size of 200x200 pixels. Rather than represent them with the state of the art manual-turned feature, we extract small 14x14 pixels image patches directly by uniform random selection. We call our auto-learned feature selection method ALFS and we will evaluate our method in two parts, the improvement, from naive method to our design alogrithm showing the progress,under our sparsity dictionary and the comparison with the well known human-turned global feature, GIST.
 
 %\begin{figure}[!ht]
 %		\centering
