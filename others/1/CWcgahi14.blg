@@ -2,45 +2,45 @@ This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: CWcgahi14.aux
 The style file: aaai.bst
-Database file #1: reference_aaai2014.bib
+Database file #1: main.bib
 You've used 2 entries,
             2568 wiz_defined-function locations,
-            589 strings with 5022 characters,
-and the built_in function-call counts, 1073 in all, are:
-= -- 117
-> -- 41
+            586 strings with 4968 characters,
+and the built_in function-call counts, 805 in all, are:
+= -- 84
+> -- 20
 < -- 1
-+ -- 14
-- -- 14
-* -- 83
-:= -- 169
-add.period$ -- 11
++ -- 6
+- -- 6
+* -- 52
+:= -- 129
+add.period$ -- 10
 call.type$ -- 2
-change.case$ -- 15
+change.case$ -- 10
 chr.to.int$ -- 2
 cite$ -- 2
-duplicate$ -- 41
-empty$ -- 75
-format.name$ -- 17
-if$ -- 227
+duplicate$ -- 39
+empty$ -- 67
+format.name$ -- 9
+if$ -- 174
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 16
+missing$ -- 3
+newline$ -- 15
 num.names$ -- 6
-pop$ -- 12
+pop$ -- 14
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 13
 quote$ -- 0
-skip$ -- 36
+skip$ -- 32
 stack$ -- 0
-substring$ -- 75
-swap$ -- 15
+substring$ -- 42
+swap$ -- 13
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 12
 warning$ -- 0
-while$ -- 9
+while$ -- 7
 width$ -- 3
-write$ -- 32
+write$ -- 29

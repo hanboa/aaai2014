@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Galmar}{2011}]{galmar2011using}
+Galmar, B.
+\newblock 2011.
+\newblock Using {K}ohonen maps of {C}hinese morphological families to visualize
+  the interplay of morphology and semantics in {C}hinese.
+\newblock In {\em Proceedings of the Twenty Third Conference on Computational
+  Linguistics and Speech Processing},  240--251.
+
+\bibitem[\protect\citeauthoryear{Manning and
+  Sch{\"u}tze}{1999}]{manning1999foundations}
+Manning, C.~D., and Sch{\"u}tze, H.
+\newblock 1999.
+\newblock {\em Foundations of Statistical Natural Language Processing}.
+\newblock Cambridge, MA: MIT Press.
+
+\end{thebibliography}

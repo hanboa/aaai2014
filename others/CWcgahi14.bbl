@@ -1,18 +1,19 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\citeauthoryear{Galmar}{2011}]{galmar2011using}
-Galmar, B.
-\newblock 2011.
-\newblock Using {K}ohonen maps of {C}hinese morphological families to visualize
-  the interplay of morphology and semantics in {C}hinese.
-\newblock In {\em Proceedings of the Twenty Third Conference on Computational
-  Linguistics and Speech Processing},  240--251.
+\bibitem[\protect\citeauthoryear{Oliva and Torralba}{2001}]{oliva2001modeling}
+Oliva, A., and Torralba, A.
+\newblock 2001.
+\newblock Modeling the shape of the scene: A holistic representation of the
+  spatial envelope.
+\newblock {\em International journal of computer vision} 42(3):145--175.
 
-\bibitem[\protect\citeauthoryear{Manning and
-  Sch{\"u}tze}{1999}]{manning1999foundations}
-Manning, C.~D., and Sch{\"u}tze, H.
-\newblock 1999.
-\newblock {\em Foundations of Statistical Natural Language Processing}.
-\newblock Cambridge, MA: MIT Press.
+\bibitem[\protect\citeauthoryear{Xiao \bgroup et al\mbox.\egroup
+  }{2010}]{xiao2010sun}
+Xiao, J.; Hays, J.; Ehinger, K.~A.; Oliva, A.; and Torralba, A.
+\newblock 2010.
+\newblock Sun database: Large-scale scene recognition from abbey to zoo.
+\newblock In {\em Computer vision and pattern recognition (CVPR), 2010 IEEE
+  conference on},  3485--3492.
+\newblock IEEE.
 
 \end{thebibliography}
