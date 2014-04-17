@@ -1,0 +1,417 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 03:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**CWcgahi14.tex
+(./CWcgahi14.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./aaai.sty
+Conference Style for AAAI for LaTeX 2e -- version of 1 December 2013
+\titlebox=\skip43
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip44
+\subfigcapskip=\skip45
+\subfigcaptopadj=\dimen105
+\subfigbottomskip=\skip46
+\subfigcapmargin=\dimen106
+\subfiglabelskip=\skip47
+\c@subfigure=\count88
+\c@lofdepth=\count89
+\c@subtable=\count90
+\c@lotdepth=\count91
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2012/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip48
+\subfig@bottom=\skip49
+)
+(./CWcgahi14.aux)
+\openout1 = `CWcgahi14.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 22.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen107
+\scratchbox=\box26
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen108
+\MPnumerator=\count96
+\makeMPintoPDFobject=\count97
+\everyMPtoPDFconversion=\toks16
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 29.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+
+
+LaTeX Warning: No \author given.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 29.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+ [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+
+<figures_dir/aaai_systemDiagram.pdf, id=10, 569.12625pt x 254.9525pt>
+File: figures_dir/aaai_systemDiagram.pdf Graphic file (type pdf)
+
+<use figures_dir/aaai_systemDiagram.pdf>
+Package pdftex.def Info: figures_dir/aaai_systemDiagram.pdf used on input line 
+66.
+(pdftex.def)             Requested size: 245.71754pt x 110.0748pt.
+
+Overfull \hbox (6.32317pt too wide) in paragraph at lines 66--67
+[][] 
+ []
+
+<figures_dir/dict.png, id=11, 200.71494pt x 184.30428pt>
+File: figures_dir/dict.png Graphic file (type png)
+
+<use figures_dir/dict.png>
+Package pdftex.def Info: figures_dir/dict.png used on input line 85.
+(pdftex.def)             Requested size: 158.99377pt x 146.00093pt.
+
+<figures_dir/temp_algorithm1.png, id=13, 754.82pt x 464.73625pt>
+File: figures_dir/temp_algorithm1.png Graphic file (type png)
+
+<use figures_dir/temp_algorithm1.png>
+Package pdftex.def Info: figures_dir/temp_algorithm1.png used on input line 103
+.
+(pdftex.def)             Requested size: 202.3529pt x 124.58696pt.
+
+<figures_dir/temp_algorithm2.png, id=14, 619.31375pt x 321.2pt>
+File: figures_dir/temp_algorithm2.png Graphic file (type png)
+
+<use figures_dir/temp_algorithm2.png>
+Package pdftex.def Info: figures_dir/temp_algorithm2.png used on input line 112
+.
+(pdftex.def)             Requested size: 202.3529pt x 104.94748pt.
+
+<figures_dir/bamboo_forest.jpg, id=15, 803.0pt x 401.5pt>
+File: figures_dir/bamboo_forest.jpg Graphic file (type jpg)
+
+<use figures_dir/bamboo_forest.jpg>
+Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 124.
+(pdftex.def)             Requested size: 166.2212pt x 83.11058pt.
+
+<figures_dir/beach.jpg, id=16, 803.0pt x 401.5pt>
+File: figures_dir/beach.jpg Graphic file (type jpg)
+ <use figures_dir/beach.jpg>
+Package pdftex.def Info: figures_dir/beach.jpg used on input line 124.
+(pdftex.def)             Requested size: 166.2212pt x 83.11058pt.
+
+<figures_dir/corridor.jpg, id=17, 803.0pt x 401.5pt>
+File: figures_dir/corridor.jpg Graphic file (type jpg)
+
+<use figures_dir/corridor.jpg>
+Package pdftex.def Info: figures_dir/corridor.jpg used on input line 124.
+(pdftex.def)             Requested size: 166.2212pt x 83.11058pt.
+
+Overfull \hbox (2.77362pt too wide) in paragraph at lines 124--125
+ [][] 
+ []
+
+Package epstopdf Info: Source file: <figures_dir/bamboo_forest_10queries_4compa
+rison_75.eps>
+(epstopdf)                    date: 2014-04-18 01:43:47
+(epstopdf)                    size: 11275 bytes
+(epstopdf)             Output file: <figures_dir/bamboo_forest_10queries_4compa
+rison_75-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-18 01:43:47
+(epstopdf)                    size: 7757 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures_dir/bamboo_forest_
+10queries_4comparison_75-eps-converted-to.pdf figures_dir/bamboo_forest_10queri
+es_4comparison_75.eps>
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf, id=18
+, 453.695pt x 255.95625pt>
+File: figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf G
+raphic file (type pdf)
+
+<use figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf>
+Package pdftex.def Info: figures_dir/bamboo_forest_10queries_4comparison_75-eps
+-converted-to.pdf used on input line 131.
+(pdftex.def)             Requested size: 168.38922pt x 94.99915pt.
+Package epstopdf Info: Source file: <figures_dir/beach_10queries_4comparison_75
+.eps>
+(epstopdf)                    date: 2014-04-18 01:43:47
+(epstopdf)                    size: 11401 bytes
+(epstopdf)             Output file: <figures_dir/beach_10queries_4comparison_75
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-18 01:43:47
+(epstopdf)                    size: 7852 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures_dir/beach_10querie
+s_4comparison_75-eps-converted-to.pdf figures_dir/beach_10queries_4comparison_7
+5.eps>
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf, id=19, 453.69
+5pt x 257.96375pt>
+File: figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf>
+Package pdftex.def Info: figures_dir/beach_10queries_4comparison_75-eps-convert
+ed-to.pdf used on input line 131.
+(pdftex.def)             Requested size: 168.38922pt x 95.74423pt.
+Package epstopdf Info: Source file: <figures_dir/corridor_10queries_4comparison
+_75.eps>
+(epstopdf)                    date: 2014-04-18 01:43:47
+(epstopdf)                    size: 11389 bytes
+(epstopdf)             Output file: <figures_dir/corridor_10queries_4comparison
+_75-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-18 01:43:47
+(epstopdf)                    size: 7837 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures_dir/corridor_10que
+ries_4comparison_75-eps-converted-to.pdf figures_dir/corridor_10queries_4compar
+ison_75.eps>
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf, id=20, 453
+.695pt x 255.95625pt>
+File: figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf Graphi
+c file (type pdf)
+
+<use figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf>
+Package pdftex.def Info: figures_dir/corridor_10queries_4comparison_75-eps-conv
+erted-to.pdf used on input line 131.
+(pdftex.def)             Requested size: 168.38922pt x 94.99915pt.
+
+Overfull \hbox (9.27766pt too wide) in paragraph at lines 131--132
+ [][] 
+ []
+
+[2 <./figures_dir/aaai_systemDiagram.pdf> <./figures_dir/dict.png>]
+Package epstopdf Info: Source file: <figures_dir/round4_random100_4comparison_7
+5.eps>
+(epstopdf)                    date: 2014-04-18 01:43:47
+(epstopdf)                    size: 11302 bytes
+(epstopdf)             Output file: <figures_dir/round4_random100_4comparison_7
+5-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-18 01:43:47
+(epstopdf)                    size: 7858 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures_dir/round4_random1
+00_4comparison_75-eps-converted-to.pdf figures_dir/round4_random100_4comparison
+_75.eps>
+(epstopdf)             \includegraphics on input line 162.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=48, 453.6
+95pt x 315.1775pt>
+File: figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf>
+Package pdftex.def Info: figures_dir/round4_random100_4comparison_75-eps-conver
+ted-to.pdf used on input line 162.
+(pdftex.def)             Requested size: 252.94499pt x 175.7191pt.
+
+Overfull \hbox (13.55061pt too wide) in paragraph at lines 162--163
+ [][] 
+ []
+
+[3 <./figures_dir/bamboo_forest.jpg> <./figures_dir/beach.jpg> <./figures_dir/c
+orridor.jpg> <./figures_dir/bamboo_forest_10queries_4comparison_75-eps-converte
+d-to.pdf> <./figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf> <
+./figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf> <./figure
+s_dir/temp_algorithm1.png> <./figures_dir/temp_algorithm2.png>]
+Underfull \hbox (badness 2065) in paragraph at lines 185--186
+[]\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 189--190
+\OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 197--199
+\OT1/ptm/m/n/10 ing Al-go-rithms for Ap-prox-i-mate Near-est Neigh-bor in
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 197--199
+\OT1/ptm/m/n/10 High Di-men-sions" (by Alexandr An-doni and Pi-otr In-
+ []
+
+[4 <./figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf>]
+(./CWcgahi14.aux) ) 
+Here is how much of TeX's memory you used:
+ 1818 strings out of 493488
+ 27934 string characters out of 3141326
+ 84440 words of memory out of 3000000
+ 5097 multiletter control sequences out of 15000+200000
+ 16774 words of font info for 32 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 38i,10n,24p,973b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.
+enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local
+/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CWcgahi14.pdf (4 pages, 846695 bytes).
+PDF statistics:
+ 96 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+
