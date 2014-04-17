@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  17 APR 2014 10:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  17 APR 2014 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -76,11 +76,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(./CWcgahi14.aux
-
-LaTeX Warning: Label `cottage_garden_top10_comparison' multiply defined.
-
-)
+(./CWcgahi14.aux)
 \openout1 = `CWcgahi14.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -96,7 +92,8 @@ LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 19.
- (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -180,30 +177,32 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 
-<figures_dir/dict.png, id=1, 200.71494pt x 184.30428pt>
-File: figures_dir/dict.png Graphic file (type png)
-
-<use figures_dir/dict.png>
-Package pdftex.def Info: figures_dir/dict.png used on input line 55.
-(pdftex.def)             Requested size: 158.99377pt x 146.00093pt.
-
-<figures_dir/system_query.png, id=3, 1000.73875pt x 466.74374pt>
+<figures_dir/system_query.png, id=1, 1000.73875pt x 466.74374pt>
 File: figures_dir/system_query.png Graphic file (type png)
 
 <use figures_dir/system_query.png>
-Package pdftex.def Info: figures_dir/system_query.png used on input line 65.
-(pdftex.def)             Requested size: 202.3529pt x 94.37265pt.
+Package pdftex.def Info: figures_dir/system_query.png used on input line 61.
+(pdftex.def)             Requested size: 216.81pt x 101.11711pt.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
+<figures_dir/dict.png, id=11, 200.71494pt x 184.30428pt>
+File: figures_dir/dict.png Graphic file (type png)
+
+<use figures_dir/dict.png>
+Package pdftex.def Info: figures_dir/dict.png used on input line 72.
+(pdftex.def)             Requested size: 158.99377pt x 146.00093pt.
+
 <figures_dir/temp_algorithm1.png, id=13, 754.82pt x 464.73625pt>
 File: figures_dir/temp_algorithm1.png Graphic file (type png)
 
 <use figures_dir/temp_algorithm1.png>
-Package pdftex.def Info: figures_dir/temp_algorithm1.png used on input line 80.
+Package pdftex.def Info: figures_dir/temp_algorithm1.png used on input line 87.
 
 (pdftex.def)             Requested size: 202.3529pt x 124.58696pt.
 
@@ -211,45 +210,37 @@ Package pdftex.def Info: figures_dir/temp_algorithm1.png used on input line 80.
 File: figures_dir/temp_algorithm2.png Graphic file (type png)
 
 <use figures_dir/temp_algorithm2.png>
-Package pdftex.def Info: figures_dir/temp_algorithm2.png used on input line 89.
+Package pdftex.def Info: figures_dir/temp_algorithm2.png used on input line 96.
 
 (pdftex.def)             Requested size: 202.3529pt x 104.94748pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
- [2 <./figures_dir/dict.png> <./figures_dir/system_query.png> <./figures_dir/te
-mp_algorithm1.png> <./figures_dir/temp_algorithm2.png>]
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
-
-<figures_dir/bamboo_forest.jpg, id=19, 803.0pt x 401.5pt>
+ [2 <./figures_dir/system_query.png> <./figures_dir/dict.png> <./figures_dir/te
+mp_algorithm1.png> <./figures_dir/temp_algorithm2.png>] <figures_dir/bamboo_for
+est.jpg, id=19, 803.0pt x 401.5pt>
 File: figures_dir/bamboo_forest.jpg Graphic file (type jpg)
 
 <use figures_dir/bamboo_forest.jpg>
-Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 133.
+Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 122.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
 <figures_dir/bamboo_10queries.jpg, id=20, 963.6pt x 722.7pt>
 File: figures_dir/bamboo_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/bamboo_10queries.jpg>
-Package pdftex.def Info: figures_dir/bamboo_10queries.jpg used on input line 13
-4.
+Package pdftex.def Info: figures_dir/bamboo_10queries.jpg used on input line 12
+3.
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
 
 <figures_dir/beach.jpg, id=21, 803.0pt x 401.5pt>
 File: figures_dir/beach.jpg Graphic file (type jpg)
  <use figures_dir/beach.jpg>
-Package pdftex.def Info: figures_dir/beach.jpg used on input line 141.
+Package pdftex.def Info: figures_dir/beach.jpg used on input line 130.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
 <figures_dir/beach_10queries.jpg, id=22, 963.6pt x 722.7pt>
 File: figures_dir/beach_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/beach_10queries.jpg>
-Package pdftex.def Info: figures_dir/beach_10queries.jpg used on input line 142
+Package pdftex.def Info: figures_dir/beach_10queries.jpg used on input line 131
 .
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
 
@@ -257,7 +248,7 @@ Package pdftex.def Info: figures_dir/beach_10queries.jpg used on input line 142
 File: figures_dir/corridor.jpg Graphic file (type jpg)
 
 <use figures_dir/corridor.jpg>
-Package pdftex.def Info: figures_dir/corridor.jpg used on input line 149.
+Package pdftex.def Info: figures_dir/corridor.jpg used on input line 138.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
 <figures_dir/corridor_10queries.jpg, id=24, 963.6pt x 722.7pt>
@@ -265,58 +256,48 @@ File: figures_dir/corridor_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/corridor_10queries.jpg>
 Package pdftex.def Info: figures_dir/corridor_10queries.jpg used on input line 
-150.
+139.
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [3 <./figures_dir/bamboo_forest.jpg> <./figures_dir/bamboo_10queries.jpg> <./f
-igures_dir/beach.jpg> <./figures_dir/beach_10queries.jpg> <./figures_dir/corrid
-or.jpg> <./figures_dir/corridor_10queries.jpg>]
-Underfull \hbox (badness 2065) in paragraph at lines 168--169
+igures_dir/beach.jpg> <./figures_dir/beach_10queries.jpg>]
+Underfull \hbox (badness 2065) in paragraph at lines 157--158
 []\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 172--173
+Underfull \hbox (badness 1226) in paragraph at lines 161--162
 \OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 180--182
+Underfull \hbox (badness 2277) in paragraph at lines 169--171
 \OT1/ptm/m/n/10 ing Al-go-rithms for Ap-prox-i-mate Near-est Neigh-bor in
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 180--182
+Underfull \hbox (badness 1152) in paragraph at lines 169--171
 \OT1/ptm/m/n/10 High Di-men-sions" (by Alexandr An-doni and Pi-otr In-
  []
 
-[4
-
-] (./CWcgahi14.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[4 <./figures_dir/corridor.jpg> <./figures_dir/corridor_10queries.jpg>]
+(./CWcgahi14.aux) ) 
 Here is how much of TeX's memory you used:
- 1648 strings out of 493488
- 24828 string characters out of 3141326
- 82606 words of memory out of 3000000
- 4935 multiletter control sequences out of 15000+200000
+ 1649 strings out of 493488
+ 24852 string characters out of 3141326
+ 82589 words of memory out of 3000000
+ 4936 multiletter control sequences out of 15000+200000
  16774 words of font info for 32 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,10n,23p,965b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on CWcgahi14.pdf (4 pages, 1052781 bytes).
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.
+enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CWcgahi14.pdf (4 pages, 1047054 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

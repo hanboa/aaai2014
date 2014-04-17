@@ -38,9 +38,12 @@ The task is closely related to the nature of \emph{human cognition} since any de
 method %(need better wording instead of 'method')
 that emulates several important aspects of actual neurophysiological mechanisms, including \emph{sparse coding} in primary visual cortex (V1), \emph{synaptic plasticity}, and \emph{mutual inhibition} between neurons. The mechanisms are not chosen randomly, instead, they complement each other's weak points for overall improvements without sacrificing efficiency.
 
-Given unlabeled data, \emph{sparse coding} provides a class of algorithms capable of extracting higher-level features that are actually more cognitively effective than hand-picked ones by emulating partial activity of neurons. The features can be regarded as the most representative building blocks by which the input data can be reconstructed most \emph{efficiently} -- highest accuracy with fewest elements used. The features form the bases resemble the \emph{receptive fields} of neurons of in the visual cortex, making sparse coding a more appropriate medium than other widely-used computer vision features such as SIFT (Lowe 1999), GIST (Oliva et al. 2001), HOG (Dalal et al. 2005) etc., to bridge human cognition and algorithmic way of learning.
+Given unlabeled data, \emph{sparse coding} provides a class of algorithms capable of extracting higher-level features that are actually more cognitively effective than hand-picked ones by emulating partial activity of neurons. The features can be regarded as the most representative building blocks by which the input data can be reconstructed most \emph{efficiently} -- highest accuracy with fewest elements used. The features form the \emph{overcomplete} bases that resemble the \emph{receptive fields} of neurons of in the visual cortex, making sparse coding a more appropriate medium than other widely-used computer vision features such as SIFT (Lowe 1999), GIST (Oliva et al. 2001), HOG (Dalal et al. 2005) etc., to bridge human cognition and algorithmic way of learning.
 
-Unfortunately, though there are works (Ge et al. 2013) that tackle the similar image search problem by first representing query images as their sparse codes, the high computational cost involved in sparse code calculation renders it infeasible for (near) realtime retrieval tasks. We proposed a novel approach to overcome the performance bottleneck by a change of perspective: instead of encoding the images 
+Unfortunately, though there are works (Ge et al. 2013) that tackle the similar image search problem by first representing query images as their sparse codes, the high computational cost involved in sparse code calculation renders it infeasible for (near) realtime retrieval tasks. Thus, we proposed in this paper a novel approach to overcome the performance bottleneck by a change of perspective: equipped with already-learned features, can we filter out the dominant features \emph{directly} from an image, without resorting to the complete set of its sparse code? By regarding those selected features collectively as the image's \emph{hash value}, the method actually transforms the sparse coding based approach to one more similar to efficient hash-based methods. 
+
+Considering the fact that sparse representation is based on an \emph{overcomplete} basis (Olshausen and Field 1996), we use concepts similar to that of inner-products and orthogonal decompositions to aid our feature selection. By combining the inhibition-like decomposition scheme with an additional mechanism that emulates synaptic plasticity, we are able to come up with a retrieval system with hash-based-like efficiency, and performance comparable to GIST-based approach. Experiments based on \emph{SUN397 scene benchmark} confirmed  the effectiveness and efficiency of our method.
+
 %Some people have images search problem with the representation of sparse codes proposed by (Ge et al. 2013). However, finding sparse codes has high computational costs on doing effective real time search. We propose a novel approach to solve this problem by using overcomplete basis in dictionary rather than computing sparse codes and we will show that our approach is effective in natural image. 
 
 %There are many researches studying about how to make image retrieval effective. Conventionally, there are three steps in large-scale content-based image retrieval when given a set of indexed images and a query image. The first is feature extraction. Many complex approaches are developed to find effective image representation to encode a variety of images. Secondly, dimension reduction is important to speed up the retrieval process. Finally, effective metric is needed to compute the similarity between features. Compared to the traditional framework we propose a different solution without the part of feature extraction to solve this problem by the plausible model of visual cortex—sparse coding.
@@ -48,7 +51,21 @@ Unfortunately, though there are works (Ge et al. 2013) that tackle the similar i
 %Sparse representation based on an \emph{overcomplete} basis (Olshausen and Field 1996), inspired by mammalian striate cortex mechanism from neural science community has been widely applied in many computer science fields, such as data compression, speech recognition and image denoising,  etc. (Sivaram 2010), (Wright et al. 2009).  One important property of sparse coding is that it can extract from data higher-level features that are actually more cognitively effective than hand-picked ones by simulating partial activity of neurons.  
 %According to promising neural science theory and the high performance of algorithms developed within decades, we assume that sparse coding which simulates mammalian visual cortex activities is a very efficient approach to find the latent features compared to traditional unsupervised learning such as PCA. We also assume that neuron simulation-based approach for image representation is better than other widely used computer vision features including SIFT (Lowe 1999), GIST (Oliva et al. 2001), HOG (Dalal et al. 2005) and etc. because we have our visual system as promising evidence to support. 
 
-\section{Offline Unsupervised Dictionary Learning}
+\section{Proposed Retrieval System}
+
+\subsection{System framework}
+\label{subsec:framework}
+
+\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=3.0in]{figures_dir/system_query.png}
+		\caption{Proposed system.}
+		\label{fig:framework}
+\end{figure}
+Given a query natural image, we firstly decorrelate the image to equalize the variance which is also employed in preprocessing for dictionary due to potential factual and corrupted and this also roughly simulate spatial-frequency reponse characteristic of retinal ganglion cells proposed by (Olshausen 1997) in our cognitive system.  We then uniformly select several image patches to extract a certain pattern of the image. We feed all extracted vectors into our auto-learned feature selection algorithms to encode the data. Finally, we use L2 distance as default metric to compute similarity score. The system diagram is shown in Fig.~\ref{fig:framework}.
+
+\subsection{Offline Unsupervised Dictionary Learning}
+\label{subsec:dictionary}
 Sparse-based dictionary learning has proven been effective in natural images which are mostly scene image. Given input unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases. %(dictioanry圖)
 \begin{figure}[!ht]
 		\centering
@@ -57,17 +74,7 @@ Sparse-based dictionary learning has proven been effective in natural images whi
 		\label{dictionary}
 \end{figure}
 
-\section{System framework}
-%% FLOW CHART %TODO
-Given a query natural image, we firstly decorrelate the image to equalize the variance which is also employed in preprocessing for dictionary due to potential factual and corrupted and this also roughly simulate spatial-frequency reponse characteristic of retinal ganglion cells proposed by (Olshausen 1997) in our cognitive system.  We then uniformly select several image patches to extract a certain pattern of the image. We feed all extracted vectors into our auto-learned feature selection algorithms to encode the data. Finally, we use L2 distance as default metric to compute similarity score. The system diagram is shown in Figure 2.
-\begin{figure}[!ht]
-		\centering
-		\includegraphics[width=.4\textwidth]{figures_dir/system_query.png}
-		\caption{Precision and Recall Curve}
-		\label{cottage_garden_top10_comparison}
-\end{figure}
-
-\section{Auto-learned feature selection algorithms}
+\subsection{Auto-learned feature selection algorithms}
 Since our retrieval framework encode the image pattern of natural images into sparsity-based dictionary, we are motivated to select effective feature, especially those have high response to patches of natural images. Inspired by localitive sensitive hashing proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserving promise, we propose our novel algorithm to find out the atom of feature pattern in the dictionary to perform our hash-based dimensional reduction.
 
 Firstly, we project our patches vector onto the atom of dictionary to get the highest values of the result for each vector of patches and have another zero array with the same size. We call those atoms strong responsive to the corresponding patches vector. Then, we set the value of each patches vector at corresponding atom of dictionary to be one.
@@ -109,24 +116,6 @@ We call this naive idea inspired from traditional LSH as Neuron\_LSH in figures.
 \subsection{Comparison with Human-tuned feature methods}
 Due to our scene dataset, to be fair, we employ GIST features to do the evaluation. For comparison, we extract GIST features proposed by (!!!) directly from 200x200 pixels images 
 Due to the most state of the art working under different framework from us,  we compare our ALFS method with LSH-based scheme under our spetial sparse coding framework as the baseline and we will show how much we have improved under this novel framework for image retrieval as an example. 
-
-
-   
-%\subsection{not in the paper}
-%We obtained the precision and recall curves by averaging the results of all testing images in every class.
-%
-%Some points:
-%1. how do we improve the method under the sparsity dictionary framework
-%2. the average performance for each query to each category, just to name a few
-%3. the overall average performance mixing all different kinds of queries to each category.
-
-Figure 3 demonstrates Precision \& Recall curves. 
-
-
-\begin{itemize}
-\item show the recall and precision for some image
-\item show the result images
-\end{itemize}
 
 \begin{figure}[!ht]
 		\centering
@@ -180,6 +169,22 @@ Dalal, Navneet, and Bill Triggs. "Histograms of oriented gradients for human det
 CACM survey of LSH (2008): "Near-Optimal Hashing Algorithms for Approximate Nearest Neighbor in High Dimensions" (by Alexandr Andoni and Piotr Indyk).Communications of the ACM, vol. 51, no. 1, 2008, pp. 117-122. 
 directly from CACM 
 
+
+%\subsection{not in the paper}
+%We obtained the precision and recall curves by averaging the results of all testing images in every class.
+%
+%Some points:
+%1. how do we improve the method under the sparsity dictionary framework
+%2. the average performance for each query to each category, just to name a few
+%3. the overall average performance mixing all different kinds of queries to each category.
+
+%Figure 3 demonstrates Precision \& Recall curves. 
+
+
+%\begin{itemize}
+%\item show the recall and precision for some image
+%\item show the result images
+%\end{itemize}
 %\section{key sentence}
 %Critical question or point we had better contain or answer:
 %\textbf{
