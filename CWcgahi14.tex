@@ -5,6 +5,9 @@
 \usepackage{helvet}
 \usepackage{courier}
 \usepackage{graphicx}
+%Hans
+\usepackage{subfigure}
+
 \frenchspacing
 \setlength{\pdfpagewidth}{8.5in}
 \setlength{\pdfpageheight}{11in}
@@ -59,7 +62,7 @@ By combining the inhibition-like decomposition scheme with an additional mechani
 
 \begin{figure}[!h]
 		\centering
-		\includegraphics[width=3.0in]{figures_dir/system_query.png}
+		\includegraphics[width=3.0in]{figures_dir/aaai_systemDiagram.pdf}
 		\caption{Proposed system.}
 		\label{fig:framework}
 \end{figure}
@@ -105,7 +108,26 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
 		\caption{Response Reactivation Scoring}
 		\label{cottage_garden_top10_comparison}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[!ht]
+\centering
+\subfigure{
+   		\includegraphics[width=2.3in]{figures_dir/bamboo_forest.jpg}	
+        \includegraphics[width=2.3in]{figures_dir/beach.jpg}
+		\includegraphics[width=2.3in]{figures_dir/corridor.jpg}
+   \label{fig:subfig1}
+ }
 
+ \subfigure[Subfigure 2 caption][]{
+   		\includegraphics[width=2.33in]{figures_dir/bamboo_forest_10queries_4comparison_75.eps}   		
+        \includegraphics[width=2.33in]{figures_dir/beach_10queries_4comparison_75.eps}
+        \includegraphics[width=2.33in]{figures_dir/corridor_10queries_4comparison_75.eps}
+   \label{fig:subfig2}
+ }
+
+\label{for subfig}
+\caption{Global figure caption}
+\end{figure*}
 
 \section{Experimental results}
 We evaluate our proposed system on a subset of SUN397 database. Our database contains 10 categories from all three top-level partitions (indoor, outdoor natural, outdoor man-made): bamboo forest, beach, botanical garden, corridor, cottage garden, hayfield, mountain snowy, waterfallBlock, wheat field, and wine cellearBarrelStorage.  To accelerate training as well as later query stage, rather than directly representing the whole image by human-tuned feature sets, we randomly extract !!! $14\times14$ pixels patches from each images.
@@ -126,29 +148,21 @@ We call this naive idea inspired from traditional LSH as Neuron\_LSH in figures.
 Due to our scene dataset, to be fair, we employ GIST features to do the evaluation. For comparison, we extract GIST features proposed by (!!!) directly from 200x200 pixels images 
 Due to the most state of the art working under different framework from us,  we compare our ALFS method with LSH-based scheme under our spetial sparse coding framework as the baseline and we will show how much we have improved under this novel framework for image retrieval as an example. 
 
-\begin{figure}[!ht]
-		\centering
-		\includegraphics[width=.4\textwidth]{figures_dir/bamboo_forest.jpg}
-		\includegraphics[width=.4\textwidth]{figures_dir/bamboo_10queries.jpg}
-		\caption{bamboo forest}
-		\label{TEMP!!! bamboo_forest 10 queries images}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Random 100 queries PR-curve
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=3.5in]{figures_dir/round4_random100_4comparison_75.eps}
+	\caption{hello}
+	\label{random 100 queries}
+	
 \end{figure}
 
-\begin{figure}[!ht]
-		\centering
-		\includegraphics[width=.4\textwidth]{figures_dir/beach.jpg}
-		\includegraphics[width=.4\textwidth]{figures_dir/beach_10queries.jpg}
-		\caption{beach}
-		\label{beach}
-\end{figure}
 
-\begin{figure}[!ht]
-		\centering
-		\includegraphics[width=.4\textwidth]{figures_dir/corridor.jpg}
-		\includegraphics[width=.4\textwidth]{figures_dir/corridor_10queries.jpg}
-		\caption{jpg}
-		\label{TEMP!!!corridor}
-\end{figure}
+
+
 \section{Conclusion}
 Rather than traditional human-turned feature extraction our cognitive system based on sparse coding successfully combine proposed novel auto-learned feature selection algorithm with sparsity-based dictionary to create ouw own discriminative code to retrieve natural images with high performance. The sparsity-based dictionary which capture basic elements consisting a natural image is a well learned structure to encode images. Although it needs more powerful algorithm and research in large-scale image retrieval or other big data, this is the promising direction of relative application.  
 \section{Discussion}
