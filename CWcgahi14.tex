@@ -138,6 +138,25 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
 \end{figure}
 
 \subsubsection{Synaptic Plasticity Reactivation Scoring}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[h]
+  \caption{IFS Algorithm}
+  \begin{algorithmic}[2]  	
+       
+    \For{$i=1$; $i<10$; $i++$ }%
+    	 $ scoring \in 1 \times (the\ number\ of\ images\ in\ database)$ ;
+    	 \For {$j=1$; $i<reentrant\ number$; $i++$ }%
+    	 	\State Get the index of the closet number
+    	 	\State $scoring(index)=scoring \times 1.2$
+         \EndFor
+         \State $scoring = scoring \times 0.9$
+         
+    \EndFor 
+
+  \end{algorithmic}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %{Response Reactivation Scoring}
 \begin{figure}[!ht]
 		\centering
