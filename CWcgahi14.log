@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 02:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 03:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,8 +338,11 @@ Overfull \hbox (9.27766pt too wide) in paragraph at lines 129--130
  [][] 
  []
 
-[2 <./figures_dir/aaai_systemDiagram.pdf> <./figures_dir/dict.png> <./figures_d
-ir/temp_algorithm1.png>]
+
+Underfull \vbox (badness 1803) has occurred while \output is active []
+
+ [2 <./figures_dir/aaai_systemDiagram.pdf> <./figures_dir/dict.png> <./figures_
+dir/temp_algorithm1.png>]
 Package epstopdf Info: Source file: <figures_dir/round4_random100_4comparison_7
 5.eps>
 (epstopdf)                    date: 2014-04-18 01:43:47
@@ -368,15 +371,12 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 160--161
  [][] 
  []
 
-
-Underfull \vbox (badness 4927) has occurred while \output is active []
-
- [3 <./figures_dir/bamboo_forest.jpg> <./figures_dir/beach.jpg> <./figures_dir/
-corridor.jpg> <./figures_dir/bamboo_forest_10queries_4comparison_75-eps-convert
-ed-to.pdf> <./figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf> 
-<./figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf> <./figur
-es_dir/temp_algorithm2.png> <./figures_dir/round4_random100_4comparison_75-eps-
-converted-to.pdf>]
+[3 <./figures_dir/bamboo_forest.jpg> <./figures_dir/beach.jpg> <./figures_dir/c
+orridor.jpg> <./figures_dir/bamboo_forest_10queries_4comparison_75-eps-converte
+d-to.pdf> <./figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf> <
+./figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf> <./figure
+s_dir/temp_algorithm2.png> <./figures_dir/round4_random100_4comparison_75-eps-c
+onverted-to.pdf>]
 Underfull \hbox (badness 2065) in paragraph at lines 183--184
 []\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
  []
@@ -412,7 +412,7 @@ Here is how much of TeX's memory you used:
 fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
 ocal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CWcgahi14.pdf (4 pages, 846017 bytes).
+Output written on CWcgahi14.pdf (4 pages, 846444 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
