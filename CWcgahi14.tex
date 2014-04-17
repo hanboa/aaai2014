@@ -63,10 +63,11 @@ By combining the inhibition-like decomposition scheme with an additional mechani
 
 \begin{figure}[!h]
 		\centering
-		\includegraphics[width=3.0in]{figures_dir/aaai_systemDiagram.pdf}
-		\caption{Proposed system.}
+		\includegraphics[width=3.6in]{figures_dir/aaai_systemDiagram.pdf}
+		\caption{Proposed system. Given a query image, the system extracts from the database the required number of similar images in real time. Note that the dictionary is trained in advance using a different set of images, though of the same categories.}
 		\label{fig:framework}
 \end{figure}
+The 
 
 \subsection{Image Preprocessing}
 Before feeding into the system, all images including those used for dictionary training are first whitened. Whitening makes the input less redundant by removing the correlations between neighboring pixels. This step is very fast while allowing significant improvement in feature learning quality, as the features to be learned would become less correlated and of the same variance. Since the sparse coding algorithm is based on.... the learned features 
