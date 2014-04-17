@@ -76,7 +76,9 @@ Before being fed into the retrieval system or used for dictionary training, all 
 
 \subsection{Offline Unsupervised Dictionary Learning}
 \label{subsec:dictionary}
-Sparse-based dictionary learning has been proved to be especially effective in capturing discriminative features of scene images. We use the \emph{Efficient sparse coding algorithms} proposed in (Lee et al. 2007) to build the dictionary of features from a learning set of 1000 images of size $200\times200$ pixels. The Achilles' heels of sparse code dependent methods are rarely their performance, but the time needed for image encoding. We
+Sparse-based dictionary learning has been proved to be especially effective in capturing discriminative features of scene images. We use the \emph{Efficient sparse coding algorithms} proposed in (Lee et al. 2007) to build the dictionary of features from a learning set of 1000 images of size $200\times200$ pixels. The Achilles' heels of sparse code dependent methods are rarely their performance, but the \emph{time} needed for image encoding. In our method, sparse code calculation is done \emph{once and for all} during dictionary learning, off-line and in advance. The calculation can be done on an arbitrary set of images by some powerful computer not contained in the retrieval system itself. Only the resulted dictionary is required.
+
+Rather than using the dictionary
 %Given unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases.
 \begin{figure}[!ht]
 		\centering
@@ -112,30 +114,30 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
 		\label{cottage_garden_top10_comparison}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% 3 subfigures
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[!ht]
 \centering
 \subfigure{
    		\includegraphics[width=2.3in]{figures_dir/bamboo_forest.jpg}	
         \includegraphics[width=2.3in]{figures_dir/beach.jpg}
 		\includegraphics[width=2.3in]{figures_dir/corridor.jpg}
-   \label{fig:subfig1 top 8 retrieved images}
+   \label{fig:subfig1}
  }
 
- \subfigure{%\subfigure[Subfigure 2 caption]{
+ \subfigure[Subfigure 2 caption][]{
    		\includegraphics[width=2.33in]{figures_dir/bamboo_forest_10queries_4comparison_75.eps}   		
         \includegraphics[width=2.33in]{figures_dir/beach_10queries_4comparison_75.eps}
         \includegraphics[width=2.33in]{figures_dir/corridor_10queries_4comparison_75.eps}
-   \label{fig:subfig2 PR_curve}
+   \label{fig:subfig2}
  }
 
+<<<<<<< HEAD
 \label{The-result-of-the-retrieval}
 \caption{Precision \& Recall curve with 10 random queries for each different category. In each case, the set of images are top 8 retrieved results given a certain query image. Our proposed algorithm outperforms the baselines in different categories }
 \end{figure*}
 
 \section{Experimental results}
 We evaluate our proposed system on a subset of \emph{SUN397 scene benchmark} dataset and it contains 10 categories from all three top-level partitions (indoor, outdoor natural, outdoor man-made): bamboo forest, beach, botanical garden, corridor, cottage garden, hayfield, mountain snowy, waterfallBlock, wheat field, and wine cellearBarrelStorage.  To accelerate training as well as later query stage, rather than directly representing the whole image by human-tuned feature sets, we randomly extract 50 $14\times14$ pixels patches from each images.
+
 %We evaluate our proposed system on a subset of scene images which is a version of MIT SUN dataset, SUN397 scene benchmark, from (!!!).  Our subdataset consist of 3,583 scene images that have been grouped into 10 different classes: bamboo\_forest, beach, botanical\_garden, corridor, cottage\_garden, hayfield, mountain\_snowy, waterfallBlock, wheat\_field, wine\_cellearBarrelStorage. Original images in the dataset have different sizes so we resize them into the size of 200x200 pixels. Rather than represent them with the state of the art manual-turned feature, we extract small 14x14 pixels image patches directly by uniform random selection. We call our auto-learned feature selection method ALFS and we will evaluate our method in two parts, the improvement, from naive method to our design alogrithm showing the progress,under our sparsity dictionary and the comparison with the well known human-turned global feature, GIST.
 
 \subsection{Improvement under sparsity dictioanry framework}
@@ -152,7 +154,7 @@ Due to the state of the art working under different framework from us,  we compa
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=3.5in]{figures_dir/round4_random100_4comparison_75.eps}
-	\caption{Precision \& Recall curve for 100 random queries.}
+	\caption{hello}
 	\label{random 100 queries}
 	
 \end{figure}
