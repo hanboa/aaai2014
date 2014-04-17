@@ -78,7 +78,6 @@ Before being fed into the retrieval system or used for dictionary training, all 
 \label{subsec:dictionary}
 Sparse-based dictionary learning has been proved to be especially effective in capturing discriminative features of scene images. We use the \emph{Efficient sparse coding algorithms} proposed in (Lee et al. 2007) to build the dictionary of features from a learning set of 1000 images of size $200\times200$ pixels. The Achilles' heels of sparse code dependent methods are rarely their performance, but the \emph{time} needed for image encoding. In our method, sparse code calculation is done \emph{once and for all} during dictionary learning, off-line and in advance. The calculation can be done on an arbitrary set of images by some powerful computer not contained in the retrieval system itself. Only the resulted dictionary is required.
 
-Rather than using the dictionary
 %Given unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases.
 \begin{figure}[!ht]
 		\centering
@@ -87,6 +86,8 @@ Rather than using the dictionary
 		\label{dictionary}
 \end{figure}
 \subsection{Hash Value Generation}
+This is the main step of our proposed method. Instead of determining two images' similarity by directly computing the difference of their sparse code, we proposed two neural-inspired procedures that when used cooperatively, can generate each image's hash value. For each image, this step can efficiently select from the dictionary a group of (non-redundant) features that together captures the image's characteristic. ``Which features are chosen from the static dictionary'' can be regarded as a form of hash value. If our method can effectively select features in a way just like how we recognizing similarity, the cognitively similar images would have similar hash values, i.e. have similar features selected.
+
 \subsubsection{Inhibitive Feature Selection Algorithm}
 -Sparsity: since a vector that best captures one feature is not necessarily independent from vectors that best capture other features
 
