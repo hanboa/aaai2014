@@ -95,37 +95,21 @@ Sparse-based dictionary learning has been proved to be especially effective in c
 \begin{algorithm}[h]
   \caption{IFS Algorithm}
   \begin{algorithmic}[1]
-  	\State $T = $
-    \For{each $i\in [1,20]$}
-      \State initialize a tree $T_{i}$ with only a leaf (the root);
-      \State $T=T\cup T_{i};$
-    \EndFor
-    \ForAll {$c$ such that $c\in RecentMBatch(E_{n-1})$}
-      \label{code:TrainBase:getc}
-      \State $T=T\cup PosSample(c)$;
-      \label{code:TrainBase:pos}
-    \EndFor;
-
+  	
+    \State $Data  \in k \times m;\ image\ patches  $
+    \State $Dictionary \in m \times n;\ learned\ dictionary$
+   	\State $Reduction \in m\times n;\ inhibitive\ parameter$
+    \State $Projection = Data\bullet Dictionary \in k \times n$    
     \For{$i=1$; $i<n$; $i++$ }%
-    	Get the maximum column value and id for each row	
-    	\ForAll{$p$  such that $p\n image parches$}
-    		\label{code:TrainBase:getc}
-        	\State $T=T\cup PosSample(c)$;
-        	\label{code:TrainBase:pos}
-        \EndFor
-    \EndFor
+    	\State Get the maximum column value and ID for each row	$\in Projection$
+    	 \ForAll { $p\in image\ patches$}
+    	 	\State $V_p \in$ $\max$ \{ $basis\ w.r.t.\ image\ patch$ \}
+    	 	\State $Reduction(:,p)=V_p\bullet Dictionary( : , ID_{max}(p))$
+         \EndFor
+         \State $Data=Data - Reduction^T$
+         \State $Projection = Data\bullet Dictionary$
+    \EndFor 
 
-    \For{$i=1$ to $n$}
-      \State $//$ Your source here;
-    \EndFor
-    \State $//$ Reusing recent base classifiers.
-    \label{code:recentStart}
-    \While {$(|E_n| \leq L_1 )and( D \neq \phi)$}
-      \State Selecting the most recent classifier $c_i$ from $D$;
-      \State $D=D-c_i$;
-      \State $E_n=E_n+c_i$;
-    \EndWhile
-    \label{code:recentEnd}
   \end{algorithmic}
 \end{algorithm}
 
