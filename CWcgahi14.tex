@@ -64,29 +64,29 @@ By combining the inhibition-like decomposition scheme with an additional mechani
 \begin{figure}[!h]
 		%\centering
 		\includegraphics[width=3.4in]{figures_dir/aaai_systemDiagram.pdf}
-		\caption{Proposed system. Given a query image, the system extracts from the database the required number of similar images in real time. Note that the dictionary is trained in advance using a different set of images, though of the same categories.}
+		\caption{Proposed system. Given a query image, the system extracts from the database the required number of similar images in real time. Note that the dictionary is trained in advance using a \emph{different} set of images, though of the same categories.}
 		\label{fig:framework}
 \end{figure}
-The 
+Fig.~\ref{fig:framework} shows a complete view of our proposed system.
+Each step will be discussed in more detail in the following sections.
+%Given a query natural image, we firstly decorrelate the image to equalize the variance which is also employed in preprocessing for dictionary due to potential factual and corrupted and this also roughly simulate spatial-frequency reponse characteristic of retinal ganglion cells proposed by (Olshausen 1997) in our cognitive system.  We then uniformly select several image patches to extract a certain pattern of the image. We feed all extracted vectors into our auto-learned feature selection algorithms to encode the data. Finally, we use L2 distance as default metric to compute similarity score. The system diagram is shown in Fig.~\ref{fig:framework}.
 
 \subsection{Image Preprocessing}
-Before feeding into the system, all images including those used for dictionary training are first whitened. Whitening makes the input less redundant by removing the correlations between neighboring pixels. This step is very fast while allowing significant improvement in feature learning quality, as the features to be learned would become less correlated and of the same variance. Since the sparse coding algorithm is based on.... the learned features 
- 
-%Given a query natural image, we firstly decorrelate the image to equalize the variance which is also employed in preprocessing for dictionary due to potential factual and corrupted and this also roughly simulate spatial-frequency reponse characteristic of retinal ganglion cells proposed by (Olshausen 1997) in our cognitive system.  We then uniformly select several image patches to extract a certain pattern of the image. We feed all extracted vectors into our auto-learned feature selection algorithms to encode the data. Finally, we use L2 distance as default metric to compute similarity score. The system diagram is shown in Fig.~\ref{fig:framework}.
+Before being fed into the retrieval system or used for dictionary training, all images are first \emph{whitened} to remove information redundancy that lies in correlations between neighboring pixels. This step is very fast while allowing significant improvement in feature learning quality, as the features to be learned would become less correlated and of the same variance. 
 
 \subsection{Offline Unsupervised Dictionary Learning}
 \label{subsec:dictionary}
-Sparse-based dictionary learning has been proved to be especially effective in capturing discriminative features of scene images. We use the \emph{Efficient sparse coding algorithms} proposed in (Lee et al. 2007) to build the dictionary of features from a learning set of 1000 images of size $200\times200$ pixels.
+Sparse-based dictionary learning has been proved to be especially effective in capturing discriminative features of scene images. We use the \emph{Efficient sparse coding algorithms} proposed in (Lee et al. 2007) to build the dictionary of features from a learning set of 1000 images of size $200\times200$ pixels. The Achilles' heels of sparse code dependent methods are rarely their performance, but the time needed for image encoding. We
 %Given unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases.
 \begin{figure}[!ht]
 		\centering
 		\includegraphics[width=2.2in]{figures_dir/dict.png}
-		\caption{The Learned Dictionary}
+		\caption{The dictionary learned off-line.}
 		\label{dictionary}
 \end{figure}
 \subsection{Hash Value Generation}
 \subsubsection{Inhibitive Feature Selection Algorithm}
--Sparcity: since a vector that best captures one feature is not necessarily independent from vectors that best capture other features
+-Sparsity: since a vector that best captures one feature is not necessarily independent from vectors that best capture other features
 
 -Robustness vs entropy: when two elements are selected together with high probability, one of them becomes redundant as it provides merely any extra information. But this should not be the case.
 Since our retrieval framework encode the image pattern of natural images into sparsity-based dictionary, we are motivated to select effective feature, especially those have high response to patches of natural images. Inspired by localitive sensitive hashing proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserving promise, we propose our novel algorithm to find out the atom of feature pattern in the dictionary to perform our hash-based dimensional reduction.
