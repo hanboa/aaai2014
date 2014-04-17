@@ -7,7 +7,13 @@
 \usepackage{graphicx}
 %Hans
 \usepackage{subfigure}
-
+\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+%end
 \frenchspacing
 \setlength{\pdfpagewidth}{8.5in}
 \setlength{\pdfpageheight}{11in}
@@ -85,6 +91,45 @@ Sparse-based dictionary learning has been proved to be especially effective in c
 		\caption{The dictionary learned off-line.}
 		\label{dictionary}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[h]
+  \caption{IFS Algorithm}
+  \begin{algorithmic}[1]
+  	\State $T = $
+    \For{each $i\in [1,20]$}
+      \State initialize a tree $T_{i}$ with only a leaf (the root);
+      \State $T=T\cup T_{i};$
+    \EndFor
+    \ForAll {$c$ such that $c\in RecentMBatch(E_{n-1})$}
+      \label{code:TrainBase:getc}
+      \State $T=T\cup PosSample(c)$;
+      \label{code:TrainBase:pos}
+    \EndFor;
+
+    \For{$i=1$; $i<n$; $i++$ }%
+    	Get the maximum column value and id for each row	
+    	\ForAll{$p$  such that $p\n image parches$}
+    		\label{code:TrainBase:getc}
+        	\State $T=T\cup PosSample(c)$;
+        	\label{code:TrainBase:pos}
+        \EndFor
+    \EndFor
+
+    \For{$i=1$ to $n$}
+      \State $//$ Your source here;
+    \EndFor
+    \State $//$ Reusing recent base classifiers.
+    \label{code:recentStart}
+    \While {$(|E_n| \leq L_1 )and( D \neq \phi)$}
+      \State Selecting the most recent classifier $c_i$ from $D$;
+      \State $D=D-c_i$;
+      \State $E_n=E_n+c_i$;
+    \EndWhile
+    \label{code:recentEnd}
+  \end{algorithmic}
+\end{algorithm}
+
+
 \subsection{Hash Value Generation}
 This is the main step of our proposed method. Instead of determining two images' similarity by directly computing the difference of their sparse code, we use the \emph{projection} of image onto dictionary basis as an emulation of image-triggered neuron excitation. We proposed two neural-inspired procedures that when used cooperatively, can generate each image's hash value. For each image, this step can efficiently select from the dictionary a group of (non-redundant) features that together captures the image's characteristic. ``Which features are chosen from the static dictionary'' can be regarded as a form of hash value. If our method can effectively select features in a way just like how we recognizing similarity, the cognitively similar images would have similar hash values, i.e. have similar features selected.
 
