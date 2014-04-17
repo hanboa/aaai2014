@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  17 APR 2014 15:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  17 APR 2014 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -218,14 +218,14 @@ Package pdftex.def Info: figures_dir/temp_algorithm2.png used on input line 100
 (pdftex.def)             Requested size: 202.3529pt x 104.94748pt.
  [2 <./figures_dir/system_query.png> <./figures_dir/dict.png> <./figures_dir/te
 mp_algorithm1.png> <./figures_dir/temp_algorithm2.png>] <figures_dir/bamboo_for
-est.jpg, id=19, 803.0pt x 401.5pt>
+est.jpg, id=21, 803.0pt x 401.5pt>
 File: figures_dir/bamboo_forest.jpg Graphic file (type jpg)
 
 <use figures_dir/bamboo_forest.jpg>
 Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 127.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
-<figures_dir/bamboo_10queries.jpg, id=20, 963.6pt x 722.7pt>
+<figures_dir/bamboo_10queries.jpg, id=22, 963.6pt x 722.7pt>
 File: figures_dir/bamboo_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/bamboo_10queries.jpg>
@@ -233,13 +233,13 @@ Package pdftex.def Info: figures_dir/bamboo_10queries.jpg used on input line 12
 8.
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
 
-<figures_dir/beach.jpg, id=21, 803.0pt x 401.5pt>
+<figures_dir/beach.jpg, id=23, 803.0pt x 401.5pt>
 File: figures_dir/beach.jpg Graphic file (type jpg)
  <use figures_dir/beach.jpg>
 Package pdftex.def Info: figures_dir/beach.jpg used on input line 135.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
-<figures_dir/beach_10queries.jpg, id=22, 963.6pt x 722.7pt>
+<figures_dir/beach_10queries.jpg, id=24, 963.6pt x 722.7pt>
 File: figures_dir/beach_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/beach_10queries.jpg>
@@ -247,20 +247,23 @@ Package pdftex.def Info: figures_dir/beach_10queries.jpg used on input line 136
 .
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
 
-<figures_dir/corridor.jpg, id=23, 803.0pt x 401.5pt>
+<figures_dir/corridor.jpg, id=25, 803.0pt x 401.5pt>
 File: figures_dir/corridor.jpg Graphic file (type jpg)
 
 <use figures_dir/corridor.jpg>
 Package pdftex.def Info: figures_dir/corridor.jpg used on input line 143.
 (pdftex.def)             Requested size: 202.3529pt x 101.1773pt.
 
-<figures_dir/corridor_10queries.jpg, id=24, 963.6pt x 722.7pt>
+<figures_dir/corridor_10queries.jpg, id=26, 963.6pt x 722.7pt>
 File: figures_dir/corridor_10queries.jpg Graphic file (type jpg)
 
 <use figures_dir/corridor_10queries.jpg>
 Package pdftex.def Info: figures_dir/corridor_10queries.jpg used on input line 
 144.
 (pdftex.def)             Requested size: 202.3529pt x 151.76044pt.
+
+Underfull \vbox (badness 1668) has occurred while \output is active []
+
  [3 <./figures_dir/bamboo_forest.jpg> <./figures_dir/bamboo_10queries.jpg> <./f
 igures_dir/beach.jpg> <./figures_dir/beach_10queries.jpg> <./figures_dir/corrid
 or.jpg> <./figures_dir/corridor_10queries.jpg>]
@@ -295,14 +298,16 @@ Here is how much of TeX's memory you used:
  957 hyphenation exceptions out of 8191
  37i,10n,23p,965b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8
-r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.
-pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texl
-ive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CWcgahi14.pdf (4 pages, 1045970 bytes).
+r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CWcgahi14.pdf (4 pages, 1060893 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

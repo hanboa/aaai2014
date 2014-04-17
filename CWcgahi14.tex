@@ -42,7 +42,8 @@ Given unlabeled data, \emph{sparse coding} provides a class of algorithms capabl
 
 Unfortunately, though there are works (Ge et al. 2013) that tackle the similar image search problem by first representing query images as their sparse codes, the high computational cost involved in sparse code calculation renders it infeasible for (near) realtime retrieval tasks. Thus, we proposed in this paper a novel approach to overcome the performance bottleneck by a change of perspective: equipped with already-learned features, can we filter out the dominant features \emph{directly} from an image, without resorting to the \emph{complete} set of its sparse code? By regarding those selected features collectively as the image's \emph{hash value}, the method actually transforms the sparse coding based approach to one more similar to efficient hash-based methods. 
 
-Considering the fact that sparse representation is based on an \emph{overcomplete} basis (Olshausen and Field 1996), we use concepts similar to that of inner-products and orthogonal decompositions to aid our feature selection. By combining the inhibition-like decomposition scheme with an additional mechanism that emulates synaptic plasticity, we are able to come up with a retrieval system with hash-based-like efficiency, and performance comparable to GIST-based approach. Experiments based on \emph{SUN397 scene benchmark} confirmed  the effectiveness and efficiency of our method.
+Considering the fact that sparse representation is based on an \emph{overcomplete} basis (Olshausen and Field 1996), we use concepts similar to that of inner-products and orthogonal decompositions to aid our feature selection. Overcomplete basis emerges as a natural result of the \emph{sparsity} constraint, .
+By combining the inhibition-like decomposition scheme with an additional mechanism that emulates synaptic plasticity, we are able to come up with a retrieval system with hash-based-like efficiency, and performance comparable to GIST-based approach. Experiments based on \emph{SUN397 scene benchmark} confirmed  the effectiveness and efficiency of our method.
 
 %Some people have images search problem with the representation of sparse codes proposed by (Ge et al. 2013). However, finding sparse codes has high computational costs on doing effective real time search. We propose a novel approach to solve this problem by using overcomplete basis in dictionary rather than computing sparse codes and we will show that our approach is effective in natural image. 
 
@@ -79,6 +80,9 @@ Sparse-based dictionary learning has been proved to be especially effective in c
 \end{figure}
 \subsection{Hash Value Generation}
 \subsubsection{Inhibitive Feature Selection Algorithm}
+-Sparcity: since a vector that best captures one feature is not necessarily independent from vectors that best capture other features
+
+-Robustness vs entropy: when two elements are selected together with high probability, one of them becomes redundant as it provides merely any extra information. But this should not be the case.
 Since our retrieval framework encode the image pattern of natural images into sparsity-based dictionary, we are motivated to select effective feature, especially those have high response to patches of natural images. Inspired by localitive sensitive hashing proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserving promise, we propose our novel algorithm to find out the atom of feature pattern in the dictionary to perform our hash-based dimensional reduction.
 
 Firstly, we project our patches vector onto the atom of dictionary to get the highest values of the result for each vector of patches and have another zero array with the same size. We call those atoms strong responsive to the corresponding patches vector. Then, we set the value of each patches vector at corresponding atom of dictionary to be one.
@@ -104,7 +108,7 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
 
 
 \section{Experimental results}
-We evaluate our proposed system on a subset of SUN397 database
+We evaluate our proposed system on a subset of SUN397 database. Our database contains 10 categories from all three top-level partitions (indoor, outdoor natural, outdoor man-made): bamboo forest, beach, botanical garden, corridor, cottage garden, hayfield, mountain snowy, waterfallBlock, wheat field, and wine cellearBarrelStorage.  To accelerate training as well as later query stage, rather than directly representing the whole image by human-tuned feature sets, we randomly extract !!! $14\times14$ pixels patches from each images.
 %We evaluate our proposed system on a subset of scene images which is a version of MIT SUN dataset, SUN397 scene benchmark, from (!!!).  Our subdataset consist of 3,583 scene images that have been grouped into 10 different classes: bamboo\_forest, beach, botanical\_garden, corridor, cottage\_garden, hayfield, mountain\_snowy, waterfallBlock, wheat\_field, wine\_cellearBarrelStorage. Original images in the dataset have different sizes so we resize them into the size of 200x200 pixels. Rather than represent them with the state of the art manual-turned feature, we extract small 14x14 pixels image patches directly by uniform random selection. We call our auto-learned feature selection method ALFS and we will evaluate our method in two parts, the improvement, from naive method to our design alogrithm showing the progress,under our sparsity dictionary and the comparison with the well known human-turned global feature, GIST.
 
 %\begin{figure}[!ht]
