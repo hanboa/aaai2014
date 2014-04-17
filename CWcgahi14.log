@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 02:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 02:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -205,16 +205,16 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
 
-<figures_dir/aaai_systemDiagram.pdf, id=10, 611.28375pt x 254.9525pt>
+<figures_dir/aaai_systemDiagram.pdf, id=10, 569.12625pt x 254.9525pt>
 File: figures_dir/aaai_systemDiagram.pdf Graphic file (type pdf)
 
 <use figures_dir/aaai_systemDiagram.pdf>
 Package pdftex.def Info: figures_dir/aaai_systemDiagram.pdf used on input line 
 66.
-(pdftex.def)             Requested size: 260.17244pt x 108.51093pt.
+(pdftex.def)             Requested size: 245.71754pt x 110.0748pt.
 
-Overfull \hbox (20.77806pt too wide) in paragraph at lines 66--67
- [][] 
+Overfull \hbox (6.32317pt too wide) in paragraph at lines 66--67
+[][] 
  []
 
 <figures_dir/dict.png, id=11, 200.71494pt x 184.30428pt>
@@ -354,7 +354,7 @@ _75.eps>
 (epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=90, 453.6
+<figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=48, 453.6
 95pt x 315.1775pt>
 File: figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -368,12 +368,15 @@ Overfull \hbox (13.55061pt too wide) in paragraph at lines 160--161
  [][] 
  []
 
-[3 <./figures_dir/bamboo_forest.jpg> <./figures_dir/beach.jpg> <./figures_dir/c
-orridor.jpg> <./figures_dir/bamboo_forest_10queries_4comparison_75-eps-converte
-d-to.pdf> <./figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf> <
-./figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf> <./figure
-s_dir/temp_algorithm2.png> <./figures_dir/round4_random100_4comparison_75-eps-c
-onverted-to.pdf>]
+
+Underfull \vbox (badness 4927) has occurred while \output is active []
+
+ [3 <./figures_dir/bamboo_forest.jpg> <./figures_dir/beach.jpg> <./figures_dir/
+corridor.jpg> <./figures_dir/bamboo_forest_10queries_4comparison_75-eps-convert
+ed-to.pdf> <./figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf> 
+<./figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf> <./figur
+es_dir/temp_algorithm2.png> <./figures_dir/round4_random100_4comparison_75-eps-
+converted-to.pdf>]
 Underfull \hbox (badness 2065) in paragraph at lines 183--184
 []\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
  []
@@ -393,9 +396,7 @@ Underfull \hbox (badness 1152) in paragraph at lines 195--197
 \OT1/ptm/m/n/10 High Di-men-sions" (by Alexandr An-doni and Pi-otr In-
  []
 
-[4
-
-] (./CWcgahi14.aux) ) 
+[4] (./CWcgahi14.aux) ) 
 Here is how much of TeX's memory you used:
  1818 strings out of 493488
  27934 string characters out of 3141326
@@ -404,17 +405,17 @@ Here is how much of TeX's memory you used:
  16774 words of font info for 32 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,10n,24p,973b,245s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8
-r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
-/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CWcgahi14.pdf (4 pages, 877765 bytes).
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base
+/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.p
+fb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CWcgahi14.pdf (4 pages, 846017 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
