@@ -118,7 +118,7 @@ As we use projection as our efficient way of gauging each basis's relevance with
     	\State Get the maximum column value and ID for each row	$\in Projection$
     	 \ForAll { $p\in image\ patches$}
     	 	\State $V_p \in$ $\max$ \{ $basis\ w.r.t.\ image\ patch$ \}
-    	 	\State $Reduction(:,p)=V_p\cdot Dictionary( : , ID_{max}(p))$
+    	 	\State $Reduction(:,p)$=$V_p\cdot Dictionary( : , ID_{max}(p))$
          \EndFor
          \State $Data=Data - Reduction^T$
          \State $Projection = Data\cdot Dictionary$
@@ -143,6 +143,7 @@ Recall that the dictionary is trained beforehand on a different database and wil
   \caption{SPRS Algorithm}
   \begin{algorithmic}[2]  	
 	\State $N\in the\ number\ of\ images\ in\ database$       
+	\State $reentrant\ number = 75\ $ \State (according to our experiment)
     \For{$i=1$; $i<10$; $i++$ }
     \State $scoring \in 1 \times N$
     	 \For {$j=1$; $i<reentrant\ number$; $i++$ }%    	 	    	 	
