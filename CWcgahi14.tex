@@ -150,25 +150,29 @@ Recall that the dictionary is trained beforehand on a different database and wil
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{algorithm}[h]
-%\begin{small}
-%  \caption{SPRS Algorithm}
-%  \begin{algorithmic}[1]  	
-%  	\State $r_{inc}>1$;  $0 < r_{dec} < 1$
-%	\State $N = \mbox{gTotal Number of Images in Retrieval Database.}$       
-%%	\State $reentrant\ number = 75\ $ \State (according to our experiment)
-%    \For{$i=1$; $i<10$; $i++$ }
-%    \State $scoring \in 1 \times N$
-%    	 \For {$j=1$; $i<reentrant\ number$; $i++$ }%    	 	    	 	
-%    	 	\State $id_{closest}= Get\ the\ index\ of\ the\ closet\ number$
-%    	 	\State $scoring(id_{closest})=scoring \times c_{enlarge}$    	 	      		
-%         \EndFor
-%         \State $scoring = scoring \times c_{shorten}$
-%         
-%    \EndFor 
-%  \end{algorithmic}
-%  \end{small}
-%\end{algorithm}
+\begin{algorithm}[h]
+\begin{small}
+ \caption{SPRS Algorithm}
+ \begin{algorithmic}[1]  	
+ 	\State $r_{inc}>1$;  $0 < r_{dec} < 1$ // scaling parameters
+ 	\State $averageNumber \in N$
+ 	\State $reentrantNumber \in N$
+	\State $n = \mbox{Total Number of Images in Retrieval Database.}$   
+	\State $scoring =[1]_{ R^(1 \times n)}$
+	\State $distance \in  R^(1 \times n)$ // the ouput from the distance metric
+%	\State $reentrant\ number = 75\ $ \State (according to our experiment)
+   \For{$i=1$; $i<averageNumber$; $i++$ }   
+   \State $distance \leftarrow$ the metric result from IFS Algorithm
+   		\For {$j=1$; $i<reentrantNumber$; $i++$ }%    	 	    	 	
+   	 		\State $index_{closest} \leftarrow sort(distancd(:), j)$
+   	 		\State $scoring(index_{closest})=scoring(index_{closest}) \cdot c_{enlarge}$    	 	      		
+    	\EndFor
+        \State $scoring = scoring \cdot c_{shorten}$
+        
+   \EndFor 
+ \end{algorithmic}
+ \end{small}
+\end{algorithm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!ht]
 %		\centering
