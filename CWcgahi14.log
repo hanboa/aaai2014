@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  18 APR 2014 12:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  18 APR 2014 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -430,6 +430,7 @@ Overfull \hbox (15.78171pt too wide) in paragraph at lines 177--184
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [3]
 Package epstopdf Info: Source file: <figures_dir/round4_random100_4comparison_7
 5.eps>
 (epstopdf)                    date: 2014-04-17 23:30:31
@@ -444,7 +445,7 @@ _75.eps>
 (epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=50, 453.6
+<figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=56, 453.6
 95pt x 315.1775pt>
 File: figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -458,7 +459,7 @@ Overfull \hbox (20.77806pt too wide) in paragraph at lines 208--209
  [][] 
  []
 
-[3]
+
 Underfull \hbox (badness 2057) in paragraph at lines 228--229
 []\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
  []
@@ -507,7 +508,7 @@ local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/lo
 cal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CWcgahi14.pdf (5 pages, 863206 bytes).
+Output written on CWcgahi14.pdf (5 pages, 863269 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream
