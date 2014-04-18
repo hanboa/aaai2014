@@ -153,6 +153,7 @@ The designed repeated stimulation from the same query image, and the correspondi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<<<<<<< HEAD
 %\begin{algorithm}[h]
 %\begin{small}
 % \caption{SPRS Algorithm}
@@ -176,6 +177,31 @@ The designed repeated stimulation from the same query image, and the correspondi
 % \end{algorithmic}
 % \end{small}
 %\end{algorithm}
+=======
+\begin{algorithm}[h]
+\begin{small}
+ \caption{SPRS Algorithm}
+ \begin{algorithmic}[1] 
+ 	\State ($\kappa$: the number of time reactivating the output of the metric.) 
+ 	\State ($\lambda$: the number of time reentrant process for synaptic weights)	
+ 	\State $r_{inc}>1$;  $0 < r_{dec} < 1$ // scaling parameters 	 	
+	\State $n = \mbox{Total Number of Images in Retrieval Database.}$   
+	\State $scoring =[1]_{1 \times n}$
+	\State $distance \in  R^{1 \times n}$ // the ouput from the distance metric
+%	\State $reentrant\ number = 75\ $ \State (according to our experiment)
+   \For{$i=1$; $i<\kappa$; $i++$ }   
+   \State $distance \leftarrow$ the metric result from IFS Algorithm
+   		\For {$j=1$; $j<\lambda$; $j++$ }%    	 	    	 	
+   	 		\State $index_{closest} \leftarrow sort(distancd(:), j)$
+   	 		\State $scoring(index_{closest})$=$scoring(index_{closest}) \cdot c_{enlarge}$    	 	      		
+    	\EndFor
+        \State $scoring = scoring \cdot c_{shorten}$
+        
+   \EndFor 
+ \end{algorithmic}
+ \end{small}
+\end{algorithm}
+>>>>>>> FETCH_HEAD
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!ht]
 %		\centering
@@ -216,7 +242,7 @@ Under our sparse coding dictionary framework, we implemented \emph{two} encoding
 
 \subsection{Comparison with GIST-based methods}
 As we use a \emph{scene} image database, to be fair, we compare our results with GIST-based methods, which is well-suited for capturing scene related features. GIST features are extracted directly from all $200\times 200$ images using methods proposed by (Oliva el al. 2001).
-The first baseline method \emph{GIST} simply extracts 128-bits GIST feature of the query image and finds the ones with nearest GIST features from the retrieval database. Another one, \emph{GIST\_LSH} accelerates the retrieval by generating hash values through random projection of images' GIST features. Experiments show that our method performs better than GIST-based ones for most cases (Fig.~3 and Fig.~4).
+The first baseline method \emph{GIST} simply extracts 512-bits GIST feature of the query image and finds the ones with nearest GIST features from the retrieval database. Another one, \emph{GIST\_LSH} accelerates the retrieval by generating 128 binary hash bits through random projection of images' GIST features. Experiments show that our method performs better than GIST-based ones for most cases (Fig.~3 and Fig.~4).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Random 100 queries PR-curve
