@@ -109,13 +109,13 @@ As we use projection as our efficient way of gauging each basis's relevance with
 \begin{algorithm}[h]
   \caption{IFS Algorithm}
   \begin{algorithmic}[1]      
-    \State $Data  \in k \times m;\ image\ patches  $ (each item, image patch, is a row vector)
-    \State $Dictionary \in m \times n;\ learned\ dictionary$ (each item, basis atom, is a column vector)
-        \State $Reduction \in m\times n;\ inhibitive\ matrix$
-    \State $Projection = Data\cdot Dictionary \in k \times n$ (each element is a responsive value for image patch w.r.t basis atom)
+    \State $Data  \in k \times m;$ {\tiny\ image\ patches   (each item, image patch, is a row vector)}
+    \State $Dictionary \in m \times n;${\tiny\ learned\ dictionary (each item, basis atom, is a column vector)}
+        \State $Reduction \in m\times n;$ {\tiny\ inhibitive\ matrix}
+    \State $Projection = Data\cdot Dictionary \in k \times n$ {\tiny (each element is a responsive value for image patch w.r.t basis atom)}
     \State $Code = [0]_{k \times n}$
     \For{$i=1$; $i<n$; $i++$ }%
-          \State Get $\overrightarrow{value_{max}}$ and $\overrightarrow{id_{max}}$ for all row vectors$ \in Projection$
+          \State {\scriptsize Get $\overrightarrow{value_{max}}$ and $\overrightarrow{id_{max}}$ for all row vectors$ \in Projection$}
           \ForAll { $row\ vecotr\ p_i \in Projection$}
           	   \State $Code(i, id_{max})$ = $1$
                %\State $V_p \in$ $\max$ \{ $basis\ w.r.t.\ image\ patch$ \}
