@@ -93,7 +93,7 @@ Sparse-based dictionary learning has been proved to be especially effective in c
 \end{figure}
 
 \subsection{Hash Value Generation}
-Inspired by the efficient \emph{localitive sensitive hashing (LSH)} proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserving promise, this hash value generation step plays central role in our proposed method.
+Inspired by the efficient \emph{localitive sensitive hashing (LSH)} proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserved, this hash value generation step plays central role in our proposed method.
 Instead of determining two images' similarity by directly computing the difference between their sparse codes, we use the \emph{projection} of patches onto dictionary as an emulation of image-triggered neuron excitation: bases with longest projected \emph{length} correspond to the most responsive neurons. We proposed two neural-inspired procedures that when used cooperatively, can generate each image's hash value adaptive to current retrieval database. For each image, this step can efficiently select from the dictionary a group of (non-redundant) features that together captures the image's characteristic. ``Which features are chosen from the static dictionary'' can be regarded as a form of hash value. If our method can effectively select features in a way like how we recognize similarity, the cognitively similar images would have similar hash values, i.e. have similar features selected. This is indeed the case as will be shown in the experiment.
 
 The two neural-inspired procedures: \emph{inhibitive feature selection}, and \emph{synaptic plasticity reactivation scoring} focus on the mutual inhibition of neurons and the connection weight tuning based on experience, respectively. As also will be shown in the experiment, the two mechanisms reinforce each other and leads to much better result when used together.
@@ -102,7 +102,8 @@ The two neural-inspired procedures: \emph{inhibitive feature selection}, and \em
 Dictionary as an overcomplete basis comes as a natural result under sparsity constraints. Given a training set of $n$ input image patches $\overrightarrow{i^{(1)}},\overrightarrow{i^{(2)}},...,\overrightarrow{i^{(n)}}$, assume that their sparse coefficients given the to-be-learned basis are $\overrightarrow{c^{(1)}},\overrightarrow{c^{(2)}},...,\overrightarrow{c^{(n)}}$, the basis $\overrightarrow{b^{(1)}},\overrightarrow{b^{(2)}},...,\overrightarrow{b^{(m)}}$ that form the learned dictionary is the solution to the optimization problem:
 \[\mbox{minimize}\sum_{j=1}^{n}\Vert \overrightarrow{i^{(j)}}-\sum_{k=1}^{m}\overrightarrow{b^{(k)}}c_k^{(j)}\Vert^2 + \beta \sum_{j=1}^{n}\sum_{k=1}^{m}\phi(c_k^{(j)})\]
 \[\mbox{subject to}\;\;\;\;\; \Vert\overrightarrow{b^{(k)}}\Vert^2 \leq \delta,\; \forall k=1,...,m\]
-Sparsity constraint (the second term) makes it more optimal to reconstruct each training image within certain accuracy using as few features from the dictionary as possible, thus effectively extracting the most representative features, not orthogonal features, out of the training database. This constraint is reasonable because features actually reside in very-high-dimensional vector space(s); what we try to capture in the dictionary are already their projections. A projected feature is not necessarily independent from other features' projections. In other words, features that are only slightly different in the relatively low dimensional vector space may be the main cause of their \emph{non}-similarity.
+Where $\phi$ is a sparsity measure under the user's choice.
+Sparsity constraint makes it more optimal to reconstruct each training image within certain accuracy using as few features from the dictionary as possible, thus effectively extracting the most representative features, not orthogonal features, out of the training database. This constraint is reasonable because features actually reside in very-high-dimensional vector space(s); what we try to capture in the dictionary are already their projections. A projected feature is not necessarily independent from other features' projections. In other words, features that are only slightly different in the relatively low dimensional vector space may be the main cause of their \emph{non}-similarity.
 
 As we use projection as our efficient way of gauging each basis's relevance with the (image) patch at hand, we are also confronted with the problem that projecting onto similar bases lead to similar strength of response. Considering the theory of sparse coding, only one of them should be selected. We choose the one with the highest response $\widehat{b}$ (i.e. with the longest projected length) \emph{and subtract this component from the input vector $\overrightarrow{i}$}, to form the vector $\overrightarrow{i'}$ used in the next projection onto the dictionary. i.e. $\overrightarrow{i'}=\overrightarrow{i}-\frac{\overrightarrow{i}\cdot\widehat{b}}{\Vert \widehat{b} \Vert ^{2}}\widehat{b}$. Iteratively, we can filter out the top $n$ strong responsive features as our hash value for each patch vector, where $n$ is flexible to the application at hand. Though we came to the \emph{subtraction} from a mathematical viewpoint, this coincides well with the inhibitive nature between neurons with similar receptive field.
 
@@ -146,7 +147,7 @@ As we use projection as our efficient way of gauging each basis's relevance with
 %\end{figure}
 
 \subsubsection{Synaptic Plasticity Reactivation Scoring}
-Recall that the dictionary is trained beforehand on a different database and will stay static throughout the query process, it will be beneficial to make the retrieval process \emph{adaptive} to current retrieval database without changing the dictionary itself. Actually, this is what the nerons are doing everyday -- the synaptic weights are altered to adapt to the survival tasks confronted. We incoporate this weight tuning scheme into our hash value generation by \emph{repeating a query image's stimulus} using multiple groups of patches.
+Recall that the dictionary is trained beforehand on a different database and will stay static throughout the query process. However, it will be beneficial to make the retrieval process \emph{adaptive} to current retrieval database without changing the dictionary itself. Actually, this is what the nerons are doing everyday -- the synaptic weights are altered to adapt to the survival tasks confronted. We incoporate this weight tuning scheme into our hash value generation by \emph{repeating a query image's stimulus} using multiple groups of patches.
 Given an input image, we extract from it multiple sets of patches. Each set of patches goes through the \emph{IFS} step and selects its set of important features. Everytime a set finishes its selection, the \emph{weights} of those images \emph{in retrieval database} that share the most of this iteration's selected features are scaled up while all other weights are scaled down. In the end, the images with the highest \emph{weights} are retrieved as answer.
 The designed repeated stimulation from the same query image, and the corresponding weight updates not only average out possible noise, but also take current task condition into account.
 
@@ -235,24 +236,21 @@ In this paper, we proposed a real-time similar image retrieval system that based
 
 %Dictionary is trained off-line, and can take full advantage of the large amount of data.
 \subsection{References} 
-Ge, Tiezheng, Qifa Ke, and Jian Sun. "Sparse-Coded Features for Image Retrieval." (2013).
+Ge, Tiezheng, Qifa Ke, and Jian Sun. ``Sparse-Coded Features for Image Retrieval,'' (2013).
 
-Wright, John, et al. "Sparse representation for computer vision and pattern recognition." Proceedings of the IEEE 98.6 (2010): 1031-1044.
+Wright, John, et al. ``Sparse representation for computer vision and pattern recognition,'' Proceedings of the IEEE 98.6 (2010): 1031-1044.
 
-Sivaram, Garimella SVS, et al. "Sparse coding for speech recognition."Acoustics Speech and Signal Processing (ICASSP), 2010 IEEE International Conference on. IEEE, 2010.
+Sivaram, Garimella SVS, et al. ``Sparse coding for speech recognition,'' Acoustics Speech and Signal Processing (ICASSP), 2010 IEEE International Conference on. IEEE, (2010).
 
-Olshausen, Bruno A., and David J. Field. "Sparse coding with an overcomplete basis set: A strategy employed by V1?." Vision research 37.23 (1997): 3311-3325.
+Olshausen, Bruno A., and David J. Field. ``Sparse coding with an overcomplete basis set: A strategy employed by V1?'' Vision research 37.23 (1997): 3311-3325.
 
-Lee, Honglak, et al. "Efficient sparse coding algorithms." Advances in neural information processing systems 19 (2007): 801.
+Lee, Honglak, et al. ``Efficient sparse coding algorithms,'' Advances in neural information processing systems 19 (2007): 801.
 
-Lowe, David G. "Object recognition from local scale-invariant features."Computer vision, 1999. The proceedings of the seventh IEEE international conference on. Vol. 2. Ieee, 1999.
+Lowe, David G. ``Object recognition from local scale-invariant features,'' Computer vision, 1999 The proceedings of the seventh IEEE international conference on. Vol. 2. IEEE, (1999).
 
-Oliva, Aude, and Antonio Torralba. "Modeling the shape of the scene: A holistic representation of the spatial envelope." International journal of computer vision42.3 (2001): 145-175.
+Oliva, Aude, and Antonio Torralba. ``Modeling the shape of the scene: A holistic representation of the spatial envelope,'' International journal of computer vision 42.3 (2001): 145-175.
 
-Dalal, Navneet, and Bill Triggs. "Histograms of oriented gradients for human detection." Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on. Vol. 1. IEEE, 2005.
-
-CACM survey of LSH (2008): "Near-Optimal Hashing Algorithms for Approximate Nearest Neighbor in High Dimensions" (by Alexandr Andoni and Piotr Indyk).Communications of the ACM, vol. 51, no. 1, 2008, pp. 117-122. 
-directly from CACM 
+Dalal, Navneet, and Bill Triggs. ``Histograms of oriented gradients for human detection,'' Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on. Vol. 1. IEEE, (2005).
 
 
 %\subsection{not in the paper}
