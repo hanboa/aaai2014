@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  18 APR 2014 12:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  18 APR 2014 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -441,7 +441,7 @@ Package epstopdf Info: Source file: <figures_dir/round4_random100_4comparison_7
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/round4_random1
 00_4comparison_75-eps-converted-to.pdf figures_dir/round4_random100_4comparison
 _75.eps>
-(epstopdf)             \includegraphics on input line 209.
+(epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=50, 453.6
@@ -451,64 +451,63 @@ file (type pdf)
 
 <use figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/round4_random100_4comparison_75-eps-conver
-ted-to.pdf used on input line 209.
+ted-to.pdf used on input line 208.
 (pdftex.def)             Requested size: 260.17244pt x 180.73991pt.
 
-Overfull \hbox (20.77806pt too wide) in paragraph at lines 209--210
+Overfull \hbox (20.77806pt too wide) in paragraph at lines 208--209
  [][] 
  []
 
 [3]
-Underfull \hbox (badness 2057) in paragraph at lines 229--230
+Underfull \hbox (badness 2057) in paragraph at lines 228--229
 []\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 233--234
+Underfull \hbox (badness 1226) in paragraph at lines 232--233
 \OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
- []
-
-
-Underfull \hbox (badness 2277) in paragraph at lines 241--243
-\OT1/ptm/m/n/10 ing Al-go-rithms for Ap-prox-i-mate Near-est Neigh-bor in
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 241--243
-\OT1/ptm/m/n/10 High Di-men-sions" (by Alexandr An-doni and Pi-otr In-
  []
 
 [4 <./figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf> 
 <./figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf> <./figures_
 dir/corridor_10queries_4comparison_75-eps-converted-to.pdf> <./figures_dir/bamb
 oo_forest.jpg> <./figures_dir/beach.jpg> <./figures_dir/corridor.jpg> <./figure
-s_dir/round4_random100_4comparison_75-eps-converted-to.pdf>] [5
+s_dir/round4_random100_4comparison_75-eps-converted-to.pdf>]
+Underfull \hbox (badness 2277) in paragraph at lines 240--242
+\OT1/ptm/m/n/10 ing Al-go-rithms for Ap-prox-i-mate Near-est Neigh-bor in
+ []
 
-]
-(./CWcgahi14.aux) ) 
+
+Underfull \hbox (badness 1152) in paragraph at lines 240--242
+\OT1/ptm/m/n/10 High Di-men-sions" (by Alexandr An-doni and Pi-otr In-
+ []
+
+[5
+
+] (./CWcgahi14.aux) ) 
 Here is how much of TeX's memory you used:
  3057 strings out of 493315
  43767 string characters out of 6137905
- 116672 words of memory out of 5000000
+ 115672 words of memory out of 5000000
  6445 multiletter control sequences out of 15000+600000
  17228 words of font info for 34 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,15n,24p,1054b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.
-enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex
-7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CWcgahi14.pdf (5 pages, 862751 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cm
+ex7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CWcgahi14.pdf (5 pages, 863206 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream

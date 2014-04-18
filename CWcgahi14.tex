@@ -196,10 +196,9 @@ The average runtime for one query that retrieves top 8 results from a retrieval 
 \subsection{Improvement with Inhibition Considered}
 Under our sparse coding dictionary framework, we implemented \emph{two} encoding method. One is a direct transplant of localitive sensitive hashing: reducing the high dimensional data into lower dimension by projecting onto the dictionary, without considering inhibitions between similar features, although the reactivation scoring is included. In fact, this is our first proof-of-concept method to explore the effectiveness of the sparse coding based framework \emph{with adaptiveness}; we will refer to this first method as \emph{feature selection algorithm}, denoted as \emph{FS} in the figures. Another one is our novel \emph{inhibitive feature selection algorithm} with both inhibition and adaptiveness considered, denoted as \emph{IFS\_SPRS} in the figures. As shown in Fig.~\ref{fig:subfig1}, adding inhibition into the flow can lead to significant performance improvement.
 
-\subsection{Comparison with Human-tuned feature methods}
-Due to our scene dataset, to be fair, we employ GIST features to do the evaluation. For comparison, we extract GIST features proposed by (Oliva el al. 2001) directly from 200x200 pixels images 
-Due to the state of the art working under different framework from us,  we compare our ALFS method with LSH-based scheme under our spetial sparse coding framework as the baseline and we will show how much we have improved under this novel framework for image retrieval as an example. 
-
+\subsection{Comparison with GIST-based methods}
+As we use a \emph{scene} image database, to be fair, we compare our results with GIST-based methods, which is well-suited for capturing scene related features. GIST features are extracted directly from all $200\times 200$ images using methods proposed by (Oliva el al. 2001).
+The first baseline method \emph{GIST} simply extracts 128-bits GIST feature of the query image and finds the ones with nearest GIST features from the retrieval database. Another one, \emph{GIST\_LSH} accelerates the retrieval by generating hash values through random projection of images' GIST features. Experiments show that our method performs better than GIST-based ones for most cases (Fig.~3 and Fig.~4).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Random 100 queries PR-curve
