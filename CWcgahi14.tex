@@ -157,7 +157,8 @@ The designed repeated stimulation from the same query image, and the correspondi
 \begin{small}
  \caption{SPRS Algorithm}
  \begin{algorithmic}[1] 
- 	\State ($\kappa$: the number of time reactivating the output of the metric.) 	
+ 	\State ($\kappa$: the number of time reactivating the output of the metric.) 
+ 	\State ($\lambda$: the number of time reentrant process for synaptic weights)	
  	\State $r_{inc}>1$;  $0 < r_{dec} < 1$ // scaling parameters 	
  	\State $reentrantNumber \in N$
 	\State $n = \mbox{Total Number of Images in Retrieval Database.}$   
@@ -166,7 +167,7 @@ The designed repeated stimulation from the same query image, and the correspondi
 %	\State $reentrant\ number = 75\ $ \State (according to our experiment)
    \For{$i=1$; $i<\kappa$; $i++$ }   
    \State $distance \leftarrow$ the metric result from IFS Algorithm
-   		\For {$j=1$; $i<reentrantNumber$; $i++$ }%    	 	    	 	
+   		\For {$j=1$; $j<\lambda$; $j++$ }%    	 	    	 	
    	 		\State $index_{closest} \leftarrow sort(distancd(:), j)$
    	 		\State $scoring(index_{closest})$=$scoring(index_{closest}) \cdot c_{enlarge}$    	 	      		
     	\EndFor
