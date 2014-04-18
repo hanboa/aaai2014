@@ -153,7 +153,6 @@ The designed repeated stimulation from the same query image, and the correspondi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-<<<<<<< HEAD
 %\begin{algorithm}[h]
 %\begin{small}
 % \caption{SPRS Algorithm}
@@ -177,31 +176,30 @@ The designed repeated stimulation from the same query image, and the correspondi
 % \end{algorithmic}
 % \end{small}
 %\end{algorithm}
-=======
-\begin{algorithm}[h]
-\begin{small}
- \caption{SPRS Algorithm}
- \begin{algorithmic}[1] 
- 	\State ($\kappa$: the number of time reactivating the output of the metric.) 
- 	\State ($\lambda$: the number of time reentrant process for synaptic weights)	
- 	\State $r_{inc}>1$;  $0 < r_{dec} < 1$ // scaling parameters 	 	
-	\State $n = \mbox{Total Number of Images in Retrieval Database.}$   
-	\State $scoring =[1]_{1 \times n}$
-	\State $distance \in  R^{1 \times n}$ // the ouput from the distance metric
-%	\State $reentrant\ number = 75\ $ \State (according to our experiment)
-   \For{$i=1$; $i<\kappa$; $i++$ }   
-   \State $distance \leftarrow$ the metric result from IFS Algorithm
-   		\For {$j=1$; $j<\lambda$; $j++$ }%    	 	    	 	
-   	 		\State $index_{closest} \leftarrow sort(distancd(:), j)$
-   	 		\State $scoring(index_{closest})$=$scoring(index_{closest}) \cdot c_{enlarge}$    	 	      		
-    	\EndFor
-        \State $scoring = scoring \cdot c_{shorten}$
-        
-   \EndFor 
- \end{algorithmic}
- \end{small}
-\end{algorithm}
->>>>>>> FETCH_HEAD
+%\begin{algorithm}[h]
+%\begin{small}
+% \caption{SPRS Algorithm}
+% \begin{algorithmic}[1] 
+% 	\State ($\kappa$: the number of time reactivating the output of the metric.) 
+% 	\State ($\lambda$: the number of time reentrant process for synaptic weights)	
+% 	\State $r_{inc}>1$;  $0 < r_{dec} < 1$ // scaling parameters 	 	
+%	\State $n = \mbox{Total Number of Images in Retrieval Database.}$   
+%	\State $scoring =[1]_{1 \times n}$
+%	\State $distance \in  R^{1 \times n}$ // the ouput from the distance metric
+%%	\State $reentrant\ number = 75\ $ \State (according to our experiment)
+%   \For{$i=1$; $i<\kappa$; $i++$ }   
+%   \State $distance \leftarrow$ the metric result from IFS Algorithm
+%   		\For {$j=1$; $j<\lambda$; $j++$ }%    	 	    	 	
+%   	 		\State $index_{closest} \leftarrow sort(distancd(:), j)$
+%   	 		\State $scoring(index_{closest})$=$scoring(index_{closest}) \cdot c_{enlarge}$    	 	      		
+%    	\EndFor
+%        \State $scoring = scoring \cdot c_{shorten}$
+%        
+%   \EndFor 
+% \end{algorithmic}
+% \end{small}
+%\end{algorithm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!ht]
 %		\centering
@@ -214,9 +212,9 @@ The designed repeated stimulation from the same query image, and the correspondi
 \label{fig:10retrieval}
 \centering
 \subfigure[]{
-   		\includegraphics[width=2.36in]{figures_dir/bamboo_forest_10queries_4comparison_75.eps}   		
-        \includegraphics[width=2.36in]{figures_dir/beach_10queries_4comparison_75.eps}
-        \includegraphics[width=2.36in]{figures_dir/corridor_10queries_4comparison_75.eps}
+   		\includegraphics[width=2.37in]{figures_dir/bamboo_forest_10queries_4comparison_75.eps}   		
+        \includegraphics[width=2.37in]{figures_dir/beach_10queries_4comparison_75.eps}
+        \includegraphics[width=2.37in]{figures_dir/corridor_10queries_4comparison_75.eps}
    \label{fig:subfig1}
  }
 \subfigure[]{
@@ -241,7 +239,7 @@ The average runtime for one query that retrieves top 8 results from a retrieval 
 Under our sparse coding dictionary framework, we implemented \emph{two} encoding method. One is a direct transplant of localitive sensitive hashing: reducing the high dimensional data into lower dimension by projecting onto the dictionary, without considering inhibitions between similar features, although the reactivation scoring is included. In fact, this is our first proof-of-concept method to explore the effectiveness of the sparse coding based framework \emph{with adaptiveness}; we will refer to this first method as \emph{feature selection algorithm}, denoted as \emph{FS} in the figures. Another one is our novel \emph{inhibitive feature selection algorithm} with both inhibition and adaptiveness considered, denoted as \emph{IFS\_SPRS} in the figures. As shown in Fig.~\ref{fig:subfig1}, adding inhibition into the flow can lead to significant performance improvement.
 
 \subsection{Comparison with GIST-based methods}
-As we use a \emph{scene} image database, to be fair, we compare our results with GIST-based methods, which is well-suited for capturing scene related features. GIST features are extracted directly from all $200\times 200$ images using methods proposed by (Oliva el al. 2001).
+As we use a \emph{scene} image database, to be fair, we compare our results with GIST-based methods, which is well-suited for capturing scene related features. GIST features are extracted directly from all $200\times 200$ pixels images using methods proposed by (Oliva el al. 2001).
 The first baseline method \emph{GIST} simply extracts 512-bits GIST feature of the query image and finds the ones with nearest GIST features from the retrieval database. Another one, \emph{GIST\_LSH} accelerates the retrieval by generating 128 binary hash bits through random projection of images' GIST features. Experiments show that our method performs better than GIST-based ones for most cases (Fig.~3 and Fig.~4).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

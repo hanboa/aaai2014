@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 16:16
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  18 APR 2014 15:58
->>>>>>> FETCH_HEAD
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,16 +329,6 @@ m/n/9 (\OML/cmm/m/it/9 max\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 j[][]Projection\OT1/c
 mr/m/n/9 ))$ 
  []
 
-<<<<<<< HEAD
-=======
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-[] $\OML/cmm/m/it/9 scoring\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 index[]\OT1/cmr/m/n/
-9 )$\OT1/ptm/m/n/9 =$\OML/cmm/m/it/9 scoring\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 ind
-ex[]\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A
- []
-
->>>>>>> FETCH_HEAD
 Package epstopdf Info: Source file: <figures_dir/bamboo_forest_10queries_4compa
 rison_75.eps>
 (epstopdf)                    date: 2014-04-18 01:43:47
@@ -354,7 +340,7 @@ rison_75-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/bamboo_forest_
 10queries_4comparison_75-eps-converted-to.pdf figures_dir/bamboo_forest_10queri
 es_4comparison_75.eps>
-(epstopdf)             \includegraphics on input line 195.
+(epstopdf)             \includegraphics on input line 219.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf, id=44
@@ -364,8 +350,8 @@ raphic file (type pdf)
 
 <use figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/bamboo_forest_10queries_4comparison_75-eps
--converted-to.pdf used on input line 195.
-(pdftex.def)             Requested size: 170.55724pt x 96.22159pt.
+-converted-to.pdf used on input line 219.
+(pdftex.def)             Requested size: 171.27954pt x 96.62776pt.
 Package epstopdf Info: Source file: <figures_dir/beach_10queries_4comparison_75
 .eps>
 (epstopdf)                    date: 2014-04-18 01:43:47
@@ -377,7 +363,7 @@ Package epstopdf Info: Source file: <figures_dir/beach_10queries_4comparison_75
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/beach_10querie
 s_4comparison_75-eps-converted-to.pdf figures_dir/beach_10queries_4comparison_7
 5.eps>
-(epstopdf)             \includegraphics on input line 195.
+(epstopdf)             \includegraphics on input line 219.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf, id=45, 453.69
@@ -387,8 +373,8 @@ ile (type pdf)
 
 <use figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/beach_10queries_4comparison_75-eps-convert
-ed-to.pdf used on input line 195.
-(pdftex.def)             Requested size: 170.55724pt x 96.97626pt.
+ed-to.pdf used on input line 219.
+(pdftex.def)             Requested size: 171.27954pt x 97.38564pt.
 Package epstopdf Info: Source file: <figures_dir/corridor_10queries_4comparison
 _75.eps>
 (epstopdf)                    date: 2014-04-18 01:43:47
@@ -400,7 +386,7 @@ _75-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/corridor_10que
 ries_4comparison_75-eps-converted-to.pdf figures_dir/corridor_10queries_4compar
 ison_75.eps>
-(epstopdf)             \includegraphics on input line 195.
+(epstopdf)             \includegraphics on input line 219.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf, id=46, 453
@@ -410,35 +396,35 @@ c file (type pdf)
 
 <use figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/corridor_10queries_4comparison_75-eps-conv
-erted-to.pdf used on input line 195.
-(pdftex.def)             Requested size: 170.55724pt x 96.22159pt.
+erted-to.pdf used on input line 219.
+(pdftex.def)             Requested size: 171.27954pt x 96.62776pt.
 
 <figures_dir/bamboo_forest.jpg, id=47, 803.0pt x 401.5pt>
 File: figures_dir/bamboo_forest.jpg Graphic file (type jpg)
 
 <use figures_dir/bamboo_forest.jpg>
-Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 201.
+Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 225.
 (pdftex.def)             Requested size: 170.55724pt x 85.27933pt.
 
 <figures_dir/beach.jpg, id=48, 803.0pt x 401.5pt>
 File: figures_dir/beach.jpg Graphic file (type jpg)
  <use figures_dir/beach.jpg>
-Package pdftex.def Info: figures_dir/beach.jpg used on input line 201.
+Package pdftex.def Info: figures_dir/beach.jpg used on input line 225.
 (pdftex.def)             Requested size: 170.55724pt x 85.27933pt.
 
 <figures_dir/corridor.jpg, id=49, 803.0pt x 401.5pt>
 File: figures_dir/corridor.jpg Graphic file (type jpg)
 
 <use figures_dir/corridor.jpg>
-Package pdftex.def Info: figures_dir/corridor.jpg used on input line 201.
+Package pdftex.def Info: figures_dir/corridor.jpg used on input line 225.
 (pdftex.def)             Requested size: 170.55724pt x 85.27933pt.
 
-Overfull \hbox (15.78171pt too wide) in paragraph at lines 195--202
+Overfull \hbox (17.94862pt too wide) in paragraph at lines 219--226
  [][] 
  []
 
 
-Overfull \hbox (15.78171pt too wide) in paragraph at lines 195--202
+Overfull \hbox (15.78171pt too wide) in paragraph at lines 219--226
  [] 
  []
 
@@ -453,7 +439,7 @@ Package epstopdf Info: Source file: <figures_dir/round4_random100_4comparison_7
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/round4_random1
 00_4comparison_75-eps-converted-to.pdf figures_dir/round4_random100_4comparison
 _75.eps>
-(epstopdf)             \includegraphics on input line 226.
+(epstopdf)             \includegraphics on input line 250.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=50, 453.6
@@ -463,10 +449,10 @@ file (type pdf)
 
 <use figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/round4_random100_4comparison_75-eps-conver
-ted-to.pdf used on input line 226.
+ted-to.pdf used on input line 250.
 (pdftex.def)             Requested size: 260.17244pt x 180.73991pt.
 
-Overfull \hbox (20.77806pt too wide) in paragraph at lines 226--227
+Overfull \hbox (20.77806pt too wide) in paragraph at lines 250--251
  [][] 
  []
 
@@ -474,35 +460,24 @@ Overfull \hbox (20.77806pt too wide) in paragraph at lines 226--227
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<<<<<<< HEAD
-Underfull \hbox (badness 1226) in paragraph at lines 248--250
+Underfull \hbox (badness 1226) in paragraph at lines 272--274
 \OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 251--253
+Underfull \hbox (badness 1199) in paragraph at lines 275--277
 \OT1/ptm/m/n/10 Lowe, David G. ``Ob-ject recog-ni-tion from lo-cal scale-
  []
 
 
-Underfull \hbox (badness 3049) in paragraph at lines 260--262
+Underfull \hbox (badness 3049) in paragraph at lines 284--286
 \OT1/ptm/m/n/10 recog-ni-tion,'' Acous-tics Speech and Sig-nal Pro-cess-ing
-=======
-Underfull \hbox (badness 2057) in paragraph at lines 247--248
-[]\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. ``Sparse cod-ing for
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 251--252
-\OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
->>>>>>> FETCH_HEAD
  []
 
 [4 <./figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf> 
 <./figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf> <./figures_
 dir/corridor_10queries_4comparison_75-eps-converted-to.pdf> <./figures_dir/bamb
 oo_forest.jpg> <./figures_dir/beach.jpg> <./figures_dir/corridor.jpg> <./figure
-<<<<<<< HEAD
 s_dir/round4_random100_4comparison_75-eps-converted-to.pdf>] (./CWcgahi14.aux) 
 ) 
 Here is how much of TeX's memory you used:
@@ -532,41 +507,7 @@ nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on CWcgahi14.pdf (4 pages, 896606 bytes).
-=======
-s_dir/round4_random100_4comparison_75-eps-converted-to.pdf>] [5
-
-]
-(./CWcgahi14.aux) ) 
-Here is how much of TeX's memory you used:
- 3070 strings out of 493315
- 43867 string characters out of 6137905
- 116672 words of memory out of 5000000
- 6451 multiletter control sequences out of 15000+600000
- 20874 words of font info for 43 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 38i,15n,24p,1054b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.
-enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex
-7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/20
-13/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on CWcgahi14.pdf (5 pages, 900891 bytes).
->>>>>>> FETCH_HEAD
+Output written on CWcgahi14.pdf (4 pages, 896604 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream
