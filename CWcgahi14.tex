@@ -144,11 +144,10 @@ Recall that the dictionary is trained beforehand on a different database and wil
   \begin{algorithmic}[2]  	
 	\State $N\in the\ number\ of\ images\ in\ database$       
     \For{$i=1$; $i<10$; $i++$ }
-
-    $scoring \in 1 \times N$
+    \State $scoring \in 1 \times N$
     	 \For {$j=1$; $i<reentrant\ number$; $i++$ }%    	 	    	 	
-    	 	\State $Get the index of the closet number$
-    	 	\State $scoring(index)=scoring \times 1.2$    	 	      		
+    	 	\State $id_{closest}= Get\ the\ index\ of\ the\ closet\ number$
+    	 	\State $scoring(id_{closest})=scoring \times 1.2$    	 	      		
          \EndFor
          \State $scoring = scoring \times 0.9$
          

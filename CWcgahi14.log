@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 11:03
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  18 APR 2014 10:53
->>>>>>> FETCH_HEAD
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  18 APR 2014 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,35 +320,14 @@ OT1/cmr/m/n/10 (:
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<<<<<<< HEAD
-=======
-<figures_dir/bamboo_forest.jpg, id=44, 803.0pt x 401.5pt>
-File: figures_dir/bamboo_forest.jpg Graphic file (type jpg)
-
-<use figures_dir/bamboo_forest.jpg>
-Package pdftex.def Info: figures_dir/bamboo_forest.jpg used on input line 174.
-(pdftex.def)             Requested size: 166.2212pt x 83.11058pt.
-
-<figures_dir/beach.jpg, id=45, 803.0pt x 401.5pt>
-File: figures_dir/beach.jpg Graphic file (type jpg)
- <use figures_dir/beach.jpg>
-Package pdftex.def Info: figures_dir/beach.jpg used on input line 174.
-(pdftex.def)             Requested size: 166.2212pt x 83.11058pt.
-
-<figures_dir/corridor.jpg, id=46, 803.0pt x 401.5pt>
-File: figures_dir/corridor.jpg Graphic file (type jpg)
-
-<use figures_dir/corridor.jpg>
-Package pdftex.def Info: figures_dir/corridor.jpg used on input line 174.
-(pdftex.def)             Requested size: 166.2212pt x 83.11058pt.
-
-Overfull \hbox (2.77362pt too wide) in paragraph at lines 174--175
- [][] 
+Overfull \hbox (5.52873pt too wide) in paragraph at lines 149--150
+[] $\OML/cmm/m/it/10 id[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 Get the index of t
+he closet number$ 
  []
 
->>>>>>> FETCH_HEAD
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package epstopdf Info: Source file: <figures_dir/bamboo_forest_10queries_4compa
 rison_75.eps>
 (epstopdf)                    date: 2014-04-17 23:24:42
@@ -364,11 +339,7 @@ rison_75-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/bamboo_forest_
 10queries_4comparison_75-eps-converted-to.pdf figures_dir/bamboo_forest_10queri
 es_4comparison_75.eps>
-<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 173.
-=======
-(epstopdf)             \includegraphics on input line 181.
->>>>>>> FETCH_HEAD
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf, id=44
@@ -378,13 +349,8 @@ raphic file (type pdf)
 
 <use figures_dir/bamboo_forest_10queries_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/bamboo_forest_10queries_4comparison_75-eps
-<<<<<<< HEAD
 -converted-to.pdf used on input line 173.
 (pdftex.def)             Requested size: 170.55724pt x 96.22159pt.
-=======
--converted-to.pdf used on input line 181.
-(pdftex.def)             Requested size: 168.38922pt x 94.99915pt.
->>>>>>> FETCH_HEAD
 Package epstopdf Info: Source file: <figures_dir/beach_10queries_4comparison_75
 .eps>
 (epstopdf)                    date: 2014-04-17 23:24:53
@@ -396,11 +362,7 @@ Package epstopdf Info: Source file: <figures_dir/beach_10queries_4comparison_75
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/beach_10querie
 s_4comparison_75-eps-converted-to.pdf figures_dir/beach_10queries_4comparison_7
 5.eps>
-<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 173.
-=======
-(epstopdf)             \includegraphics on input line 181.
->>>>>>> FETCH_HEAD
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf, id=45, 453.69
@@ -410,13 +372,8 @@ ile (type pdf)
 
 <use figures_dir/beach_10queries_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/beach_10queries_4comparison_75-eps-convert
-<<<<<<< HEAD
 ed-to.pdf used on input line 173.
 (pdftex.def)             Requested size: 170.55724pt x 96.97626pt.
-=======
-ed-to.pdf used on input line 181.
-(pdftex.def)             Requested size: 168.38922pt x 95.74423pt.
->>>>>>> FETCH_HEAD
 Package epstopdf Info: Source file: <figures_dir/corridor_10queries_4comparison
 _75.eps>
 (epstopdf)                    date: 2014-04-17 23:25:40
@@ -428,11 +385,7 @@ _75-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/corridor_10que
 ries_4comparison_75-eps-converted-to.pdf figures_dir/corridor_10queries_4compar
 ison_75.eps>
-<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 173.
-=======
-(epstopdf)             \includegraphics on input line 181.
->>>>>>> FETCH_HEAD
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf, id=46, 453
@@ -442,7 +395,6 @@ c file (type pdf)
 
 <use figures_dir/corridor_10queries_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/corridor_10queries_4comparison_75-eps-conv
-<<<<<<< HEAD
 erted-to.pdf used on input line 173.
 (pdftex.def)             Requested size: 170.55724pt x 96.22159pt.
 
@@ -467,12 +419,6 @@ Package pdftex.def Info: figures_dir/corridor.jpg used on input line 179.
 (pdftex.def)             Requested size: 170.55724pt x 85.27933pt.
 
 Overfull \hbox (15.78171pt too wide) in paragraph at lines 173--180
-=======
-erted-to.pdf used on input line 181.
-(pdftex.def)             Requested size: 168.38922pt x 94.99915pt.
-
-Overfull \hbox (9.27766pt too wide) in paragraph at lines 181--182
->>>>>>> FETCH_HEAD
  [][] 
  []
 
@@ -492,11 +438,7 @@ Package epstopdf Info: Source file: <figures_dir/round4_random100_4comparison_7
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/round4_random1
 00_4comparison_75-eps-converted-to.pdf figures_dir/round4_random100_4comparison
 _75.eps>
-<<<<<<< HEAD
 (epstopdf)             \includegraphics on input line 204.
-=======
-(epstopdf)             \includegraphics on input line 206.
->>>>>>> FETCH_HEAD
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=50, 453.6
@@ -506,53 +448,30 @@ file (type pdf)
 
 <use figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/round4_random100_4comparison_75-eps-conver
-<<<<<<< HEAD
 ted-to.pdf used on input line 204.
 (pdftex.def)             Requested size: 260.17244pt x 180.73991pt.
 
 Overfull \hbox (20.77806pt too wide) in paragraph at lines 204--205
-=======
-ted-to.pdf used on input line 206.
-(pdftex.def)             Requested size: 252.94499pt x 175.7191pt.
-
-Overfull \hbox (13.55061pt too wide) in paragraph at lines 206--207
->>>>>>> FETCH_HEAD
  [][] 
  []
 
 [3]
-<<<<<<< HEAD
 Underfull \hbox (badness 2057) in paragraph at lines 224--225
-=======
-Underfull \hbox (badness 2057) in paragraph at lines 226--227
->>>>>>> FETCH_HEAD
 []\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
  []
 
 
-<<<<<<< HEAD
 Underfull \hbox (badness 1226) in paragraph at lines 228--229
-=======
-Underfull \hbox (badness 1226) in paragraph at lines 230--231
->>>>>>> FETCH_HEAD
 \OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
  []
 
 
-<<<<<<< HEAD
 Underfull \hbox (badness 2277) in paragraph at lines 236--238
-=======
-Underfull \hbox (badness 2277) in paragraph at lines 238--240
->>>>>>> FETCH_HEAD
 \OT1/ptm/m/n/10 ing Al-go-rithms for Ap-prox-i-mate Near-est Neigh-bor in
  []
 
 
-<<<<<<< HEAD
 Underfull \hbox (badness 1152) in paragraph at lines 236--238
-=======
-Underfull \hbox (badness 1152) in paragraph at lines 238--240
->>>>>>> FETCH_HEAD
 \OT1/ptm/m/n/10 High Di-men-sions" (by Alexandr An-doni and Pi-otr In-
  []
 
@@ -584,11 +503,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2013/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-<<<<<<< HEAD
-Output written on CWcgahi14.pdf (4 pages, 858406 bytes).
-=======
-Output written on CWcgahi14.pdf (4 pages, 858754 bytes).
->>>>>>> FETCH_HEAD
+Output written on CWcgahi14.pdf (4 pages, 859881 bytes).
 PDF statistics:
  122 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
