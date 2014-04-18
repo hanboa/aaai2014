@@ -110,12 +110,12 @@ As we use projection as our efficient way of gauging each basis's relevance with
   \caption{IFS Algorithm}
   \begin{algorithmic}[1]
   	
-    \State $Data  \in k \times m;\ image\ patches  $
-    \State $Dictionary \in m \times n;\ learned\ dictionary$
-   	\State $Reduction \in m\times n;\ inhibitive\ parameter$
-    \State $Projection = Data\cdot Dictionary \in k \times n$    
+    \State $Data  \in k \times m;\ image\ patches  $ (each item, image patch, is a row vector)
+    \State $Dictionary \in m \times n;\ learned\ dictionary$ (each item, basis atom, is a column vector)
+   	\State $Reduction \in m\times n;\ inhibitive\ matrix$
+    \State $Projection = Data\cdot Dictionary \in k \times n$ (each element is a responsive value for image patch w.r.t basis atom)
     \For{$i=1$; $i<n$; $i++$ }%
-    	\State Get the maximum column value and ID for each row	$\in Projection$
+    	\State Get the $value_{max}$ and $id_{max}$ for each image patch w.r.t basis atom$\in Projection$
     	 \ForAll { $p\in image\ patches$}
     	 	\State $V_p \in$ $\max$ \{ $basis\ w.r.t.\ image\ patch$ \}
     	 	\State $Reduction(:,p)=V_p\cdot Dictionary( : , ID_{max}(p))$
@@ -142,14 +142,16 @@ Recall that the dictionary is trained beforehand on a different database and wil
 \begin{algorithm}[h]
   \caption{SPRS Algorithm}
   \begin{algorithmic}[2]  	
-       
-    \For{$i=1$; $i<10$; $i++$ }%
-    	 $ scoring \in 1 \times (the\ number\ of\ images\ in\ database)$ ;
-    	 \For {$j=1$; $i<reentrant\ number$; $i++$ }%
-    	 	\State Get the index of the closet number
-    	 	\State $scoring(index)=scoring \times 1.2$
+  	\State $c_{enlarge} > 1$;  $\ 0 < c_{shorten} < 1$
+	\State $N\in the\ number\ of\ images\ in\ database$       
+	\State $reentrant\ number = 75\ $ \State (according to our experiment)
+    \For{$i=1$; $i<10$; $i++$ }
+    \State $scoring \in 1 \times N$
+    	 \For {$j=1$; $i<reentrant\ number$; $i++$ }%    	 	    	 	
+    	 	\State $id_{closest}= Get\ the\ index\ of\ the\ closet\ number$
+    	 	\State $scoring(id_{closest})=scoring \times c_{enlarge}$    	 	      		
          \EndFor
-         \State $scoring = scoring \times 0.9$
+         \State $scoring = scoring \times c_{shorten}$
          
     \EndFor 
 
