@@ -110,7 +110,7 @@ As we use projection as our efficient way of gauging each basis's relevance with
   \caption{IFS Algorithm}
   \begin{small}
   \begin{algorithmic}[]
-    \State ($\tau$: How many features to be selected.)
+    \State ($\tau$: How many basis vectors to be selected.)
   	\State $k$ = Number of patches; 
   	\State $m$ = Dimension of patches vectors and basis;
   	\State $n$ = Number of basis in the dictionary;
@@ -122,15 +122,15 @@ As we use projection as our efficient way of gauging each basis's relevance with
 %    \State $Projection = Data\cdot Dictionary \in k \times n$ (each element is a responsive value for image patch w.r.t basis atom)
 
     \For{$i=1$; $i<\tau$; $i++$ }%
-    	\State $\forall j, 1<j<k$ :
-    	\State $value_{max}^{(j)} \leftarrow max(j^{th} \mbox{row of }abs(Projection))$
-    	\State $index_{max}^{(j)} \leftarrow position(max(j^{th} \mbox{row of }abs(Projection)))$
-    	 \ForAll { $p\in$ rows of $Data$}
+    	\ForAll{ $j,\; 1<j<k$}
+    	\State $value_{max}^{(j)} \leftarrow max(j^{th} \mbox{row of }Projection)$
+    	\State $index_{max}^{(j)} \leftarrow position(max(j^{th} \mbox{row of }Projection))$
+    \State ($p_j\equiv j^{th}$ row of $Data$)
 %    	 	\State $V_p \in$ $\max$ \{ $basis\ w.r.t.\ image\ patch$ \}
 %    	 	\State $Reduction(:,p)=V_p\cdot Dictionary( : , ID_{max}(p))$
-
+	 \State$p_j\leftarrow p_j-value_{max}^{(j)}\cdot$ (basis at $index_{max}^{(j)})^T$;
          \EndFor
-         \State $Data=Data - Reduction^T$
+%         \State $Data=Data - Reduction^T$
          \State $Projection = Data\cdot Dictionary$
     \EndFor 
 

@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 14:10
-=======
-<<<<<<< Updated upstream
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 13:38
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.3)  18 APR 2014 13:47
->>>>>>> Stashed changes
->>>>>>> FETCH_HEAD
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,10 +323,10 @@ Package pdftex.def Info: figures_dir/dict.png used on input line 90.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 124.
 
-Overfull \hbox (11.42516pt too wide) in paragraph at lines 127--128
+Overfull \hbox (4.55757pt too wide) in paragraph at lines 127--128
 [] $\OML/cmm/m/it/9 index[] \OMS/cmsy/m/n/9   \OML/cmm/m/it/9 position\OT1/cmr/
-m/n/9 (\OML/cmm/m/it/9 max\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 j[][]abs\OT1/cmr/m/n/
-9 (\OML/cmm/m/it/9 Projection\OT1/cmr/m/n/9 )))$ 
+m/n/9 (\OML/cmm/m/it/9 max\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 j[][]Projection\OT1/c
+mr/m/n/9 ))$ 
  []
 
 Package epstopdf Info: Source file: <figures_dir/bamboo_forest_10queries_4compa
@@ -491,10 +483,10 @@ oo_forest.jpg> <./figures_dir/beach.jpg> <./figures_dir/corridor.jpg> <./figure
 s_dir/round4_random100_4comparison_75-eps-converted-to.pdf>] (./CWcgahi14.aux) 
 ) 
 Here is how much of TeX's memory you used:
- 3063 strings out of 493488
- 43753 string characters out of 3141326
+ 3065 strings out of 493488
+ 43785 string characters out of 3141326
  111053 words of memory out of 3000000
- 6299 multiletter control sequences out of 15000+200000
+ 6301 multiletter control sequences out of 15000+200000
  20874 words of font info for 43 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,15n,24p,1054b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -517,7 +509,7 @@ nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on CWcgahi14.pdf (4 pages, 895840 bytes).
+Output written on CWcgahi14.pdf (4 pages, 895701 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream
