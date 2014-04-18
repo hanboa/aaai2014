@@ -165,23 +165,22 @@ Recall that the dictionary is trained beforehand on a different database and wil
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[!ht]
 \centering
-\subfigure{
-   		\includegraphics[width=2.3in]{figures_dir/bamboo_forest.jpg}	
-        \includegraphics[width=2.3in]{figures_dir/beach.jpg}
-		\includegraphics[width=2.3in]{figures_dir/corridor.jpg}
+\subfigure[]{
+   		\includegraphics[width=2.36in]{figures_dir/bamboo_forest_10queries_4comparison_75.eps}   		
+        \includegraphics[width=2.36in]{figures_dir/beach_10queries_4comparison_75.eps}
+        \includegraphics[width=2.36in]{figures_dir/corridor_10queries_4comparison_75.eps}
    \label{fig:subfig1}
  }
-
- \subfigure{
-   		\includegraphics[width=2.33in]{figures_dir/bamboo_forest_10queries_4comparison_75.eps}   		
-        \includegraphics[width=2.33in]{figures_dir/beach_10queries_4comparison_75.eps}
-        \includegraphics[width=2.33in]{figures_dir/corridor_10queries_4comparison_75.eps}
+\subfigure[]{
+   		\includegraphics[width=2.36in]{figures_dir/bamboo_forest.jpg}	
+        \includegraphics[width=2.36in]{figures_dir/beach.jpg}
+		\includegraphics[width=2.36in]{figures_dir/corridor.jpg}
    \label{fig:subfig2}
- }
+}
 
 
 \label{The-result-of-the-retrieval}
-\caption{Precision\& Recall curves with 10 random queries for each different category. In each case, the set of images is an example top 8 retrieved results from one of the 10 random queries. Our proposed method (IFS\_ SPRS) outperforms the baselines in different image categories. Categories from left to right: bamboo forest, beach, corridor.}
+\caption{(a) Precision\& Recall curves with 10 queries of each category; our proposed method (IFS\_ SPRS) outperforms the baselines in different image categories. (b) An example of top 8 retrieved results from one of the 10 random queries. (Categories from left to right: bamboo forest, beach, corridor.)}
 \end{figure*}
 
 \section{Experimental results}
@@ -189,8 +188,8 @@ We evaluate our proposed system on a subset of \emph{SUN397 scene benchmark} dat
 
 %We evaluate our proposed system on a subset of scene images which is a version of MIT SUN dataset, SUN397 scene benchmark, from (!!!).  Our subdataset consist of 3,583 scene images that have been grouped into 10 different classes: bamboo\_forest, beach, botanical\_garden, corridor, cottage\_garden, hayfield, mountain\_snowy, waterfallBlock, wheat\_field, wine\_cellearBarrelStorage. Original images in the dataset have different sizes so we resize them into the size of 200x200 pixels. Rather than represent them with the state of the art manual-turned feature, we extract small 14x14 pixels image patches directly by uniform random selection. We call our auto-learned feature selection method ALFS and we will evaluate our method in two parts, the improvement, from naive method to our design alogrithm showing the progress,under our sparsity dictionary and the comparison with the well known human-turned global feature, GIST.
 
-\subsection{Improvement under sparsity dictioanry framework}
-Under our sparse coding dictionary framework, we implemented two encoding method: one is a direct transplant of localitive sensitive hashing method: reducing the high dimensional data into lower dimension by projecting onto the dictionary without considering inhibitions between similar features, although the reactivation scoring is included. This is our first proof-of-concept method to explore the effectiveness of image retrieval under such a sparsity dictionary framework and we will refer to it as \emph{feature selection algorithm}, denoted as \emph{FS} in the figures. Another one is our novel \emph{inhibitive feature selection algorithm}, denoted as \emph{IFS\_SPRS} in the figures. We largely improved the original performance in FS\_SPRS and we can see the outperformance in the Fig 5.
+\subsection{Improvement with Inhibition Considered}
+Under our sparse coding dictionary framework, we implemented \emph{two} encoding method. One is a direct transplant of localitive sensitive hashing: reducing the high dimensional data into lower dimension by projecting onto the dictionary, without considering inhibitions between similar features, although the reactivation scoring is included. In fact, this is our first proof-of-concept method to explore the effectiveness of the sparse coding based framework \emph{with adaptiveness}; we will refer to this first method as \emph{feature selection algorithm}, denoted as \emph{FS} in the figures. Another one is our novel \emph{inhibitive feature selection algorithm} with both inhibition and adaptiveness considered, denoted as \emph{IFS\_SPRS} in the figures. As shown in Fig.~\ref{fig:subfig1}, adding inhibition into the flow can lead to significant performance improvement.
 
 \subsection{Comparison with Human-tuned feature methods}
 Due to our scene dataset, to be fair, we employ GIST features to do the evaluation. For comparison, we extract GIST features proposed by (Oliva el al. 2001) directly from 200x200 pixels images 
@@ -202,8 +201,8 @@ Due to the state of the art working under different framework from us,  we compa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=3.5in]{figures_dir/round4_random100_4comparison_75.eps}
-	\caption{Precision \& Recall curve for 100 random queries.}
+	\includegraphics[width=3.6in]{figures_dir/round4_random100_4comparison_75.eps}
+	\caption{Precision \& Recall curve for 100 random queries. Note that our methods' effectiveness is even more apparent than the results with 10 queries shown in Fig.~\ref{fig:subfig1}.}
 	\label{random 100 queries}
 	
 \end{figure}
