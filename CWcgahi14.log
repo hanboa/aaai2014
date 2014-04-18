@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 14:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,23 +456,23 @@ Overfull \hbox (20.77806pt too wide) in paragraph at lines 219--220
  [][] 
  []
 
-
-Underfull \hbox (badness 2057) in paragraph at lines 239--240
+[3]
+Underfull \hbox (badness 2057) in paragraph at lines 240--241
 []\OT1/ptm/m/n/10 Sivaram, Garimella SVS, et al. "Sparse cod-ing for
  []
 
-[3]
-Underfull \hbox (badness 1226) in paragraph at lines 243--244
+
+Underfull \hbox (badness 1226) in paragraph at lines 244--245
 \OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 251--253
+Underfull \hbox (badness 2277) in paragraph at lines 252--254
 \OT1/ptm/m/n/10 ing Al-go-rithms for Ap-prox-i-mate Near-est Neigh-bor in
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 251--253
+Underfull \hbox (badness 1152) in paragraph at lines 252--254
 \OT1/ptm/m/n/10 High Di-men-sions" (by Alexandr An-doni and Pi-otr In-
  []
 
@@ -509,7 +509,7 @@ nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on CWcgahi14.pdf (4 pages, 895701 bytes).
+Output written on CWcgahi14.pdf (4 pages, 895924 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream
