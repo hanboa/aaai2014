@@ -146,7 +146,9 @@ As we use projection as our efficient way of gauging each basis's relevance with
 %\end{figure}
 
 \subsubsection{Synaptic Plasticity Reactivation Scoring}
-Recall that the dictionary is trained beforehand on a different database and will stay static throughout the query process, it will be beneficial to make the retrieval process \emph{adaptive} to current retrieval database without changing the dictionary itself. Actually, this is what the nerons are doing everyday -- the synaptic weights are altered to adapt to the survival tasks confronted. We incoporate this weight tuning scheme into our hash value generation by the following steps:
+Recall that the dictionary is trained beforehand on a different database and will stay static throughout the query process, it will be beneficial to make the retrieval process \emph{adaptive} to current retrieval database without changing the dictionary itself. Actually, this is what the nerons are doing everyday -- the synaptic weights are altered to adapt to the survival tasks confronted. We incoporate this weight tuning scheme into our hash value generation by \emph{repeating a query image's stimulus} using multiple groups of patches.
+Given an input image, we extract from it multiple sets of patches. Each set of patches goes through the \emph{IFS} step and selects its set of important features. Everytime a set finishes its selection, the \emph{weights} of those images \emph{in retrieval database} that share the most of this iteration's selected features are scaled up while all other weights are scaled down. In the end, the images with the highest \emph{weights} are retrieved as answer.
+The designed repeated stimulation from the same query image, and the corresponding weight updates not only average out possible noise, but also take current task condition into account.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
