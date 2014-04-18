@@ -35,7 +35,8 @@
 \maketitle
 \begin{abstract}
 \begin{quote}
-Despite growing interest in using sparse coding based methods for image classification and retrieval, progress in this direction has been limited by the high computational cost for generating each image's sparse representation. To overcome this problem, we leverage sparsity-based dictionary learning and hash-based feature selection to build a novel unsupervised way to efficiently pick out a query image's most important high-level features that can determine to which group we would visually perceived as similar. The preliminary results based on L1 feature map show the method's efficiency and high accuracy from the visual cognitive perspective. Finally, we consider a more general problem of how to make the pre-learned dictionary to adaptively refine the features contained according to past queries.
+Despite growing interest in using sparse coding based methods for image classification and retrieval, progress in this direction has been limited by the high computational cost for generating each image's sparse representation. To overcome this problem, we leverage sparsity-based dictionary learning and hash-based feature selection to build a novel unsupervised way to efficiently pick out a query image's most important high-level features that can determine to which group we would visually perceived as similar. Moreover, the method is adaptive to current retrieval database. The preliminary results based on L1 feature map show the method's efficiency and accuracy from the visual cognitive perspective. 
+%Finally, we consider a more general problem of how to make the pre-learned dictionary to adaptively refine the features contained according to past queries.
 %We propose a novel way to search natural images by higher-level features from the observations in human primary visual cortex to combine the simulation result of v1 neurons and expect to do large images search as a new cognitive architecture. We leverage sparsity-based dictionary learning and hash-based auto-learned feature selection algorithm to show fast images retrieval results. Finally, we consider a more general problem of how a learned dictionary might be related to large-scale data retrieval and expect to draw more attention to this important research.
 \end{quote}
 \end{abstract}
@@ -53,7 +54,7 @@ Unfortunately, though there are works (Ge et al. 2013) that tackle the image sea
 
 Considering the fact that sparse representation is based on an \emph{overcomplete} basis (Olshausen and Field 1996), we use concepts similar to that of inner-products and orthogonal decompositions to aid our feature selection. Overcomplete basis emerges as a natural result of the \emph{sparsity} constraint. Sparsity requirement goes against using only independent basis to assemble other important features, instead, if a feature is popular and representative enough, it would be more beneficial to add it into the dictionary to improve sparsity. As a result, apart from the robustness it provides, the seemingly redundant overcompleteness implies the vectors' independent importance in representing different types of data. This forms the reason behind choosing similar features only exclusively, i.e. similar features are mutually inhibitive. 
 
-By combining the inhibition-like decomposition scheme with an additional mechanism that emulates synaptic plasticity, we are able to come up with a retrieval system with hash-based-like efficiency, and performance comparable to GIST-based approach. Experiments based on \emph{SUN397 scene benchmark} confirmed the effectiveness and efficiency of our method.
+By combining the inhibition-like decomposition scheme with an additional mechanism that emulates synaptic plasticity to add adaptiveness given a static pre-learned dictionary, we are able to come up with a retrieval system with hash-based-like efficiency, and performance comparable to GIST-based approach. Experiments based on \emph{SUN397 scene benchmark} confirmed the effectiveness and efficiency of our method.
 
 %Some people have images search problem with the representation of sparse codes proposed by (Ge et al. 2013). However, finding sparse codes has high computational costs on doing effective real time search. We propose a novel approach to solve this problem by using overcomplete basis in dictionary rather than computing sparse codes and we will show that our approach is effective in natural image. 
 
@@ -81,7 +82,7 @@ Before being fed into the retrieval system or used for dictionary training, all 
 
 \subsection{Offline Unsupervised Dictionary Learning}
 \label{subsec:dictionary}
-Sparse-based dictionary learning has been proved to be especially effective in capturing discriminative features of scene images. We use the \emph{Efficient sparse coding algorithms} proposed in (Lee et al. 2007) to build the dictionary of features from a learning set of 1000 images of size $200\times200$ pixels. The Achilles' heels of sparse code dependent methods are rarely their performance, but the \emph{time} needed for image encoding. In our method, sparse code calculation is done \emph{once and for all} during dictionary learning, off-line and in advance. The calculation can be done on an arbitrary set of images by some powerful computer not contained in the retrieval system itself. Only the resulted dictionary is required.
+Sparse-based dictionary learning has been proved to be especially effective in capturing discriminative features of scene images. We use the \emph{Efficient sparse coding algorithms} proposed in (Lee et al. 2007) to build the dictionary of features from a learning set of 1000 images of size $200\times200$ pixels, the result is shown in Fig.~\ref{dictionary}. The Achilles' heels of sparse code dependent methods are rarely their performance, but the \emph{time} needed for image encoding. In our method, sparse code calculation is done \emph{once and for all} during dictionary learning, off-line and in advance. The calculation can be done on an arbitrary set of images by some powerful computer not contained in the retrieval system itself. Only the resulted dictionary is required.
 
 %Given unlabeled scene images, the effective sparse coding proposed by (Lee et al. 2007) captures succinct feature with higher meanings and generate a dictionary with overcomplete bases which are effective to represent the image in data set given the corresponding sparse code. The basic descriptions such as edges and line segments are efficiently encoded into atoms of dictionary so we will pre-trained the dictionary as our dimension reduction projection bases.
 \begin{figure}[!ht]
@@ -93,7 +94,7 @@ Sparse-based dictionary learning has been proved to be especially effective in c
 
 \subsection{Hash Value Generation}
 Inspired by the efficient \emph{localitive sensitive hashing (LSH)} proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserving promise, this hash value generation step plays central role in our proposed method.
-Instead of determining two images' similarity by directly computing the difference between their sparse codes, we use the \emph{projection} of patches onto dictionary as an emulation of image-triggered neuron excitation: bases with longest projected \emph{length} correspond to the most responsive neurons. We proposed two neural-inspired procedures that when used cooperatively, can generate each image's hash value. For each image, this step can efficiently select from the dictionary a group of (non-redundant) features that together captures the image's characteristic. ``Which features are chosen from the static dictionary'' can be regarded as a form of hash value. If our method can effectively select features in a way like how we recognize similarity, the cognitively similar images would have similar hash values, i.e. have similar features selected. This is indeed the case as will be shown in the experiment.
+Instead of determining two images' similarity by directly computing the difference between their sparse codes, we use the \emph{projection} of patches onto dictionary as an emulation of image-triggered neuron excitation: bases with longest projected \emph{length} correspond to the most responsive neurons. We proposed two neural-inspired procedures that when used cooperatively, can generate each image's hash value adaptive to current retrieval database. For each image, this step can efficiently select from the dictionary a group of (non-redundant) features that together captures the image's characteristic. ``Which features are chosen from the static dictionary'' can be regarded as a form of hash value. If our method can effectively select features in a way like how we recognize similarity, the cognitively similar images would have similar hash values, i.e. have similar features selected. This is indeed the case as will be shown in the experiment.
 
 The two neural-inspired procedures: \emph{inhibitive feature selection}, and \emph{synaptic plasticity reactivation scoring} focus on the mutual inhibition of neurons and the connection weight tuning based on experience, respectively. As also will be shown in the experiment, the two mechanisms reinforce each other and leads to much better result when used together.
 
@@ -103,7 +104,7 @@ Dictionary as an overcomplete basis comes as a natural result under sparsity con
 \[\mbox{subject to}\;\;\;\;\; \Vert\overrightarrow{b^{(k)}}\Vert^2 \leq \delta,\; \forall k=1,...,m\]
 Sparsity constraint (the second term) makes it more optimal to reconstruct each training image within certain accuracy using as few features from the dictionary as possible, thus effectively extracting the most representative features, not orthogonal features, out of the training database. This constraint is reasonable because features actually reside in very-high-dimensional vector space(s); what we try to capture in the dictionary are already their projections. A projected feature is not necessarily independent from other features' projections. In other words, features that are only slightly different in the relatively low dimensional vector space may be the main cause of their \emph{non}-similarity.
 
-As we use projection as our efficient way of gauging each basis's relevance with the (image) patch at hand, we are also confronted with the problem that projecting onto similar bases lead to similar strength of response. Considering the theory of sparse coding, only one of them should be selected. We choose the one with the highest response (i.e. with the longest projected length) \emph{and subtract this component from the input vector}, to form the vector used in the next projection onto the dictionary. Iteratively, we can filter out the top $n$ strong responsive features as our hash value for each patch vector, where $n$ is flexible to the application at hand. Though we came to the \emph{subtraction} from a mathematical viewpoint, this coincides well with the inhibitive nature between neurons with similar receptive field.
+As we use projection as our efficient way of gauging each basis's relevance with the (image) patch at hand, we are also confronted with the problem that projecting onto similar bases lead to similar strength of response. Considering the theory of sparse coding, only one of them should be selected. We choose the one with the highest response $\widehat{b}$ (i.e. with the longest projected length) \emph{and subtract this component from the input vector $\overrightarrow{i}$}, to form the vector $\overrightarrow{i'}$ used in the next projection onto the dictionary. i.e. $\overrightarrow{i'}=\overrightarrow{i}-\frac{\overrightarrow{i}\cdot\widehat{b}}{\Vert \widehat{b} \Vert ^{2}}\widehat{b}$. Iteratively, we can filter out the top $n$ strong responsive features as our hash value for each patch vector, where $n$ is flexible to the application at hand. Though we came to the \emph{subtraction} from a mathematical viewpoint, this coincides well with the inhibitive nature between neurons with similar receptive field.
 
 \begin{algorithm}[h]
   \caption{IFS Algorithm}
@@ -126,15 +127,15 @@ As we use projection as our efficient way of gauging each basis's relevance with
   \end{algorithmic}
 \end{algorithm}
 
-\begin{figure}[!ht]
-		\centering
-		\includegraphics[width=.4\textwidth]{figures_dir/temp_algorithm1.png}
-		\caption{Auto-learned feature selection algorithm (ALFSA)}
-		\label{TEMP!!! Inhibitive Feature Selection Algorithm}
-\end{figure}
+%\begin{figure}[!ht]
+%		\centering
+%		\includegraphics[width=.4\textwidth]{figures_dir/temp_algorithm1.png}
+%		\caption{Auto-learned feature selection algorithm (ALFSA)}
+%		\label{TEMP!!! Inhibitive Feature Selection Algorithm}
+%\end{figure}
 
 \subsubsection{Synaptic Plasticity Reactivation Scoring}
-Recall that the 
+Recall that the dictionary is trained beforehand on a different database and will stay static throughout the query process, it will be beneficial to make the retrieval process \emph{adaptive} to current retrieval database without changing the dictionary itself. Actually, this is what the nerons are doing everyday -- the synaptic weights are altered to adapt to the survival tasks confronted. We incoporate this weight tuning scheme into our hash value generation by the following steps:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -155,12 +156,12 @@ Recall that the
   \end{algorithmic}
 \end{algorithm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]
-		\centering
-		\includegraphics[width=.4\textwidth]{figures_dir/temp_algorithm2.png}
-		\caption{Response Reactivation Scoring}
-		\label{cottage_garden_top10_comparison}
-\end{figure}
+%\begin{figure}[!ht]
+%		\centering
+%		\includegraphics[width=.4\textwidth]{figures_dir/temp_algorithm2.png}
+%		\caption{Response Reactivation Scoring}
+%		\label{cottage_garden_top10_comparison}
+%\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[!ht]
 \centering
@@ -171,7 +172,7 @@ Recall that the
    \label{fig:subfig1}
  }
 
- \subfigure[Subfigure 2 caption][]{
+ \subfigure{
    		\includegraphics[width=2.33in]{figures_dir/bamboo_forest_10queries_4comparison_75.eps}   		
         \includegraphics[width=2.33in]{figures_dir/beach_10queries_4comparison_75.eps}
         \includegraphics[width=2.33in]{figures_dir/corridor_10queries_4comparison_75.eps}
@@ -180,16 +181,16 @@ Recall that the
 
 
 \label{The-result-of-the-retrieval}
-\caption{Precision \& Recall curve with 10 random queries for each different category. In each case, the set of images are top 8 retrieved results given a certain query image. Our proposed algorithm outperforms the baselines in different categories }
+\caption{Precision\& Recall curves with 10 random queries for each different category. In each case, the set of images is an example top 8 retrieved results from one of the 10 random queries. Our proposed method (IFS\_ SPRS) outperforms the baselines in different image categories. Categories from left to right: bamboo forest, beach, corridor.}
 \end{figure*}
 
 \section{Experimental results}
-We evaluate our proposed system on a subset of \emph{SUN397 scene benchmark} dataset and it contains 10 categories from all three top-level partitions (indoor, outdoor natural, outdoor man-made): bamboo forest, beach, botanical garden, corridor, cottage garden, hayfield, mountain snowy, waterfallBlock, wheat field, and wine cellearBarrelStorage.  To accelerate training as well as later query stage, rather than directly representing the whole image by human-tuned feature sets, we randomly extract 50 $14\times14$ pixels patches from each images.
+We evaluate our proposed system on a subset of \emph{SUN397 scene benchmark} dataset and it contains 10 categories from all three top-level partitions (indoor, outdoor natural, outdoor man-made): bamboo forest, beach, botanical garden, corridor, cottage garden, hayfield, mountain snowy, waterfallBlock, wheat field, and wine cellearBarrelStorage.  To accelerate training as well as later query stage, rather than directly representing the whole image by human-tuned feature sets, we randomly extract 50 $14\times14$ pixels patches from each $200\times200$ pixels image.
 
 %We evaluate our proposed system on a subset of scene images which is a version of MIT SUN dataset, SUN397 scene benchmark, from (!!!).  Our subdataset consist of 3,583 scene images that have been grouped into 10 different classes: bamboo\_forest, beach, botanical\_garden, corridor, cottage\_garden, hayfield, mountain\_snowy, waterfallBlock, wheat\_field, wine\_cellearBarrelStorage. Original images in the dataset have different sizes so we resize them into the size of 200x200 pixels. Rather than represent them with the state of the art manual-turned feature, we extract small 14x14 pixels image patches directly by uniform random selection. We call our auto-learned feature selection method ALFS and we will evaluate our method in two parts, the improvement, from naive method to our design alogrithm showing the progress,under our sparsity dictionary and the comparison with the well known human-turned global feature, GIST.
 
 \subsection{Improvement under sparsity dictioanry framework}
-Under our sparsity dictioanry framework inspired from neuron activity, we implemented two encoding method: one is inspired from localitive sensitive hashing method, reducing the high dimensional data into lower dimension with near neighbors collide in the high probility. This is our first basic method to explore the effectiveness of image retrieval under such a sparsity dictionary framework and we call it feature selection algorithm, FS in the figures; Another one is our novel Inhibitive Feature Selection Algorithm algorithm called IFS\_SPRS in out figures. We largely improved the original performance in FS\_SPRS and we can see the outperformance in the Fig 5.
+Under our sparse coding dictionary framework, we implemented two encoding method: one is a direct transplant of localitive sensitive hashing method: reducing the high dimensional data into lower dimension by projecting onto the dictionary without considering inhibitions between similar features, although the reactivation scoring is included. This is our first proof-of-concept method to explore the effectiveness of image retrieval under such a sparsity dictionary framework and we will refer to it as \emph{feature selection algorithm}, denoted as \emph{FS} in the figures. Another one is our novel \emph{inhibitive feature selection algorithm}, denoted as \emph{IFS\_SPRS} in the figures. We largely improved the original performance in FS\_SPRS and we can see the outperformance in the Fig 5.
 
 \subsection{Comparison with Human-tuned feature methods}
 Due to our scene dataset, to be fair, we employ GIST features to do the evaluation. For comparison, we extract GIST features proposed by (Oliva el al. 2001) directly from 200x200 pixels images 
@@ -209,13 +210,13 @@ Due to the state of the art working under different framework from us,  we compa
 
 \section{Conclusion}
 Rather than traditional human-turned feature extraction our cognitive system based on sparse coding successfully combine proposed novel auto-learned feature selection algorithm with sparsity-based dictionary to create ouw own discriminative code to retrieve natural images with high performance. The sparsity-based dictionary which capture basic elements consisting a natural image is a well learned structure to encode images. Although it needs more powerful algorithm and research in large-scale image retrieval or other big data, this is the promising direction of relative application.  
-\section{Discussion}
+%\section{Discussion}
 
 
-\section{How to work with big data?}
-When the world is filled with big data, effective approach is needed to deal with such a challenge.  Large-scale image with effective and reliable performance is one of examples. Recently, we are attempting to address an open question if there is new approach based our framework to handle this old but not well-solved problem. Our work lies in how we design the connection between visual neuron encoding simulation and image retrieval problem and how we investigate an effective large-sale image retrieval new candidate.
+%\section{How to work with big data?}
+%When the world is filled with big data, effective approach is needed to deal with such a challenge.  Large-scale image with effective and reliable performance is one of examples. We are attempting to address an open question: if there is new approach based on our framework to handle this old but not well-solved problem. Our work lies in how we design the connection between visual neuron encoding simulation and image retrieval problem and how we investigate an effective large-sale image retrieval new candidate.
 
-Dictionary is trained off-line, and can take full advantage of the large amount of data.
+%Dictionary is trained off-line, and can take full advantage of the large amount of data.
 \subsection{References} 
 Ge, Tiezheng, Qifa Ke, and Jian Sun. "Sparse-Coded Features for Image Retrieval." (2013).
 
