@@ -142,13 +142,12 @@ Recall that the dictionary is trained beforehand on a different database and wil
 \begin{algorithm}[h]
   \caption{SPRS Algorithm}
   \begin{algorithmic}[2]  	
-	\State $N\in the\ number\ of\ images\ in\ database$       
-    \For{$i=1$; $i<10$; $i++$ }
-
-    $scoring \in 1 \times N$
-    	 \For {$j=1$; $i<reentrant\ number$; $i++$ }%    	 	    	 	
-    	 	\State $Get the index of the closet number$
-    	 	\State $scoring(index)=scoring \times 1.2$    	 	      		
+       
+    \For{$i=1$; $i<10$; $i++$ }%
+    	 $ scoring \in 1 \times (the\ number\ of\ images\ in\ database)$ ;
+    	 \For {$j=1$; $i<reentrant\ number$; $i++$ }%
+    	 	\State Get the index of the closet number
+    	 	\State $scoring(index)=scoring \times 1.2$
          \EndFor
          \State $scoring = scoring \times 0.9$
          
@@ -165,6 +164,7 @@ Recall that the dictionary is trained beforehand on a different database and wil
 %\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[!ht]
+\label{fig:10retrieval}
 \centering
 \subfigure[]{
    		\includegraphics[width=2.36in]{figures_dir/bamboo_forest_10queries_4comparison_75.eps}   		
@@ -185,9 +185,10 @@ Recall that the dictionary is trained beforehand on a different database and wil
 \end{figure*}
 
 \section{Experimental results}
-We evaluate our proposed system on a subset of \emph{SUN397 scene benchmark} dataset and it contains 10 categories from all three top-level partitions (indoor, outdoor natural, outdoor man-made): bamboo forest, beach, botanical garden, corridor, cottage garden, hayfield, mountain snowy, waterfallBlock, wheat field, and wine cellearBarrelStorage.  To accelerate training as well as later query stage, rather than directly representing the whole image by human-tuned feature sets, we randomly extract 50 $14\times14$ pixels patches from each $200\times200$ pixels image.
+We evaluate our proposed system on a subset of \emph{SUN397 scene benchmark} dataset and it contains 10 categories from all three top-level partitions (indoor, outdoor natural, outdoor man-made): bamboo forest, beach, botanical garden, corridor, cottage garden, hayfield, mountain snowy, waterfall block, wheat field, and wine cellar barrel storage. To accelerate training as well as later query stage, we randomly extract 50 patches of $14\times14$ pixels from each $200\times200$ pixels image as our input. The results are shown in Fig.~3 and Fig.~\ref{random 100 queries}
 
-%We evaluate our proposed system on a subset of scene images which is a version of MIT SUN dataset, SUN397 scene benchmark, from (!!!).  Our subdataset consist of 3,583 scene images that have been grouped into 10 different classes: bamboo\_forest, beach, botanical\_garden, corridor, cottage\_garden, hayfield, mountain\_snowy, waterfallBlock, wheat\_field, wine\_cellearBarrelStorage. Original images in the dataset have different sizes so we resize them into the size of 200x200 pixels. Rather than represent them with the state of the art manual-turned feature, we extract small 14x14 pixels image patches directly by uniform random selection. We call our auto-learned feature selection method ALFS and we will evaluate our method in two parts, the improvement, from naive method to our design alogrithm showing the progress,under our sparsity dictionary and the comparison with the well known human-turned global feature, GIST.
+The average runtime for one query that retrieves top 8 results from a retrieval database of 3853 images is \emph{10 seconds} on a \emph{MacBook Air with 4 GB memory.}
+%1.8 GHz Intel Core i7 and 
 
 \subsection{Improvement with Inhibition Considered}
 Under our sparse coding dictionary framework, we implemented \emph{two} encoding method. One is a direct transplant of localitive sensitive hashing: reducing the high dimensional data into lower dimension by projecting onto the dictionary, without considering inhibitions between similar features, although the reactivation scoring is included. In fact, this is our first proof-of-concept method to explore the effectiveness of the sparse coding based framework \emph{with adaptiveness}; we will refer to this first method as \emph{feature selection algorithm}, denoted as \emph{FS} in the figures. Another one is our novel \emph{inhibitive feature selection algorithm} with both inhibition and adaptiveness considered, denoted as \emph{IFS\_SPRS} in the figures. As shown in Fig.~\ref{fig:subfig1}, adding inhibition into the flow can lead to significant performance improvement.
