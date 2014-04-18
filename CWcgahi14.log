@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 16:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2014.3.25)  18 APR 2014 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -439,7 +439,7 @@ Package epstopdf Info: Source file: <figures_dir/round4_random100_4comparison_7
 (epstopdf)             Command: <repstopdf --outfile=figures_dir/round4_random1
 00_4comparison_75-eps-converted-to.pdf figures_dir/round4_random100_4comparison
 _75.eps>
-(epstopdf)             \includegraphics on input line 250.
+(epstopdf)             \includegraphics on input line 252.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf, id=50, 453.6
@@ -449,28 +449,25 @@ file (type pdf)
 
 <use figures_dir/round4_random100_4comparison_75-eps-converted-to.pdf>
 Package pdftex.def Info: figures_dir/round4_random100_4comparison_75-eps-conver
-ted-to.pdf used on input line 250.
+ted-to.pdf used on input line 252.
 (pdftex.def)             Requested size: 260.17244pt x 180.73991pt.
 
-Overfull \hbox (20.77806pt too wide) in paragraph at lines 250--251
+Overfull \hbox (20.77806pt too wide) in paragraph at lines 252--253
  [][] 
  []
 
 [3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 272--274
+Underfull \hbox (badness 1226) in paragraph at lines 274--276
 \OT1/ptm/m/n/10 Ad-vances in neu-ral in-for-ma-tion pro-cess-ing sys-tems 19
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 275--277
+Underfull \hbox (badness 1199) in paragraph at lines 277--279
 \OT1/ptm/m/n/10 Lowe, David G. ``Ob-ject recog-ni-tion from lo-cal scale-
  []
 
 
-Underfull \hbox (badness 3049) in paragraph at lines 284--286
+Underfull \hbox (badness 3049) in paragraph at lines 286--288
 \OT1/ptm/m/n/10 recog-ni-tion,'' Acous-tics Speech and Sig-nal Pro-cess-ing
  []
 
@@ -507,7 +504,7 @@ nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2012/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on CWcgahi14.pdf (4 pages, 896604 bytes).
+Output written on CWcgahi14.pdf (4 pages, 896786 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream
