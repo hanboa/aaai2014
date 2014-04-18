@@ -153,29 +153,29 @@ The designed repeated stimulation from the same query image, and the correspondi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{algorithm}[h]
-\begin{small}
- \caption{SPRS Algorithm}
- \begin{algorithmic}[1] 
- 	\State ($\kappa$: the number of time reactivating the output of the metric.) 	
- 	\State $r_{inc}>1$;  $0 < r_{dec} < 1$ // scaling parameters 	
- 	\State $reentrantNumber \in N$
-	\State $n = \mbox{Total Number of Images in Retrieval Database.}$   
-	\State $scoring =[1]_{1 \times n}$
-	\State $distance \in  R^{1 \times n}$ // the ouput from the distance metric
-%	\State $reentrant\ number = 75\ $ \State (according to our experiment)
-   \For{$i=1$; $i<\kappa$; $i++$ }   
-   \State $distance \leftarrow$ the metric result from IFS Algorithm
-   		\For {$j=1$; $i<reentrantNumber$; $i++$ }%    	 	    	 	
-   	 		\State $index_{closest} \leftarrow sort(distancd(:), j)$
-   	 		\State $scoring(index_{closest})$=$scoring(index_{closest}) \cdot c_{enlarge}$    	 	      		
-    	\EndFor
-        \State $scoring = scoring \cdot c_{shorten}$
-        
-   \EndFor 
- \end{algorithmic}
- \end{small}
-\end{algorithm}
+%\begin{algorithm}[h]
+%\begin{small}
+% \caption{SPRS Algorithm}
+% \begin{algorithmic}[1] 
+% 	\State ($\kappa$: the number of time reactivating the output of the metric.) 	
+% 	\State $r_{inc}>1$;  $0 < r_{dec} < 1$ // scaling parameters 	
+% 	\State $reentrantNumber \in N$
+%	\State $n = \mbox{Total Number of Images in Retrieval Database.}$   
+%	\State $scoring =[1]_{1 \times n}$
+%	\State $distance \in  R^{1 \times n}$ // the ouput from the distance metric
+%%	\State $reentrant\ number = 75\ $ \State (according to our experiment)
+%   \For{$i=1$; $i<\kappa$; $i++$ }   
+%   \State $distance \leftarrow$ the metric result from IFS Algorithm
+%   		\For {$j=1$; $i<reentrantNumber$; $i++$ }%    	 	    	 	
+%   	 		\State $index_{closest} \leftarrow sort(distancd(:), j)$
+%   	 		\State $scoring(index_{closest})$=$scoring(index_{closest}) \cdot c_{enlarge}$    	 	      		
+%    	\EndFor
+%        \State $scoring = scoring \cdot c_{shorten}$
+%        
+%   \EndFor 
+% \end{algorithmic}
+% \end{small}
+%\end{algorithm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[!ht]
 %		\centering
@@ -239,23 +239,29 @@ In this paper, we proposed a real-time similar image retrieval system that based
 %When the world is filled with big data, effective approach is needed to deal with such a challenge.  Large-scale image with effective and reliable performance is one of examples. We are attempting to address an open question: if there is new approach based on our framework to handle this old but not well-solved problem. Our work lies in how we design the connection between visual neuron encoding simulation and image retrieval problem and how we investigate an effective large-sale image retrieval new candidate.
 
 %Dictionary is trained off-line, and can take full advantage of the large amount of data.
-\subsection{References} 
-Ge, Tiezheng, Qifa Ke, and Jian Sun. ``Sparse-Coded Features for Image Retrieval,'' (2013).
-
-Wright, John, et al. ``Sparse representation for computer vision and pattern recognition,'' Proceedings of the IEEE 98.6 (2010): 1031-1044.
-
-Sivaram, Garimella SVS, et al. ``Sparse coding for speech recognition,'' Acoustics Speech and Signal Processing (ICASSP), 2010 IEEE International Conference on. IEEE, (2010).
-
-Olshausen, Bruno A., and David J. Field. ``Sparse coding with an overcomplete basis set: A strategy employed by V1?'' Vision research 37.23 (1997): 3311-3325.
-
-Lee, Honglak, et al. ``Efficient sparse coding algorithms,'' Advances in neural information processing systems 19 (2007): 801.
-
-Lowe, David G. ``Object recognition from local scale-invariant features,'' Computer vision, 1999 The proceedings of the seventh IEEE international conference on. Vol. 2. IEEE, (1999).
-
-Oliva, Aude, and Antonio Torralba. ``Modeling the shape of the scene: A holistic representation of the spatial envelope,'' International journal of computer vision 42.3 (2001): 145-175.
-
+\subsection{References}
 Dalal, Navneet, and Bill Triggs. ``Histograms of oriented gradients for human detection,'' Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on. Vol. 1. IEEE, (2005).
 
+\smallskip \noindent
+Ge, Tiezheng, Qifa Ke, and Jian Sun. ``Sparse-Coded Features for Image Retrieval,'' (2013).
+
+\smallskip \noindent
+Lee, Honglak, et al. ``Efficient sparse coding algorithms,'' Advances in neural information processing systems 19 (2007).
+
+\smallskip \noindent
+Lowe, David G. ``Object recognition from local scale-invariant features,'' Computer vision, 1999 The proceedings of the seventh IEEE international conference on. Vol. 2. IEEE, (1999).
+
+\smallskip \noindent
+Oliva, Aude, and Antonio Torralba. ``Modeling the shape of the scene: A holistic representation of the spatial envelope,'' International journal of computer vision 42.3 (2001): 145-175.
+
+\smallskip \noindent
+Olshausen, Bruno A., and David J. Field. ``Sparse coding with an overcomplete basis set: A strategy employed by V1?'' Vision research 37.23 (1997): 3311-3325.
+
+\smallskip \noindent
+Sivaram, Garimella SVS, et al. ``Sparse coding for speech recognition,'' Acoustics Speech and Signal Processing (ICASSP), 2010 IEEE International Conference on. IEEE, (2010).
+
+\smallskip \noindent
+Wright, John, et al. ``Sparse representation for computer vision and pattern recognition,'' Proceedings of the IEEE 98.6 (2010): 1031-1044.
 
 %\subsection{not in the paper}
 %We obtained the precision and recall curves by averaging the results of all testing images in every class.
