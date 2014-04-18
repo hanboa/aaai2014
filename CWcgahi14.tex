@@ -242,7 +242,7 @@ Under our sparse coding dictionary framework, we implemented \emph{two} encoding
 
 \subsection{Comparison with GIST-based methods}
 As we use a \emph{scene} image database, to be fair, we compare our results with GIST-based methods, which is well-suited for capturing scene related features. GIST features are extracted directly from all $200\times 200$ images using methods proposed by (Oliva el al. 2001).
-The first baseline method \emph{GIST} simply extracts 512-bits GIST feature of the query image and finds the ones with nearest GIST features from the retrieval database. Another one, \emph{GIST\_LSH} accelerates the retrieval by generating 128 binary hash bits through random projection of images' GIST features. Experiments show that our method performs better than GIST-based ones for most cases (Fig.~3 and Fig.~4).
+The first baseline method \emph{GIST} simply extracts 512-bits GIST feature of the query image and finds the ones with nearest GIST features from the retrieval database. Another one, \emph{GIST\_LSH} accelerates the retrieval by generating 128 binary hash bits through random projection of images' GIST features. To boost up the speed, we generate compact codes for all above methods into binary bits and employ hamming distance metric to perform fast image retreival. Experiments show that our method performs better than GIST-based ones for most cases (Fig.~3 and Fig.~4).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Random 100 queries PR-curve
