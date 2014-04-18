@@ -92,25 +92,19 @@ Sparse-based dictionary learning has been proved to be especially effective in c
 \end{figure}
 
 \subsection{Hash Value Generation}
-This is the main step of our proposed method. 
-Instead of determining two images' similarity by directly computing the difference between their sparse codes, we use the \emph{projection} of an image onto dictionary basis as an emulation of image-triggered neuron excitation. We proposed two neural-inspired procedures that when used cooperatively, can generate each image's hash value. For each image, this step can efficiently select from the dictionary a group of (non-redundant) features that together captures the image's characteristic. ``Which features are chosen from the static dictionary'' can be regarded as a form of hash value. If our method can effectively select features in a way like how we recognize similarity, the cognitively similar images would have similar hash values, i.e. have similar features selected. This is indeed the case as will be shown in the experiment.
+Inspired by the efficient \emph{localitive sensitive hashing (LSH)} proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserving promise, this hash value generation step plays central role in our proposed method.
+Instead of determining two images' similarity by directly computing the difference between their sparse codes, we use the \emph{projection} of patches onto dictionary as an emulation of image-triggered neuron excitation: bases with longest projected \emph{length} correspond to the most responsive neurons. We proposed two neural-inspired procedures that when used cooperatively, can generate each image's hash value. For each image, this step can efficiently select from the dictionary a group of (non-redundant) features that together captures the image's characteristic. ``Which features are chosen from the static dictionary'' can be regarded as a form of hash value. If our method can effectively select features in a way like how we recognize similarity, the cognitively similar images would have similar hash values, i.e. have similar features selected. This is indeed the case as will be shown in the experiment.
 
 The two neural-inspired procedures: \emph{inhibitive feature selection}, and \emph{synaptic plasticity reactivation scoring} focus on the mutual inhibition of neurons and the connection weight tuning based on experience, respectively. As also will be shown in the experiment, the two mechanisms reinforce each other and leads to much better result when used together.
 
-\subsubsection{Inhibitive Feature Selection Algorithm}
-Dictionary as an overcomplete basis comes as a natural result under sparsity constraints. Given a training set of $n$ input images $\overrightarrow{i^{(1)}},\overrightarrow{i^{(2)}},...,\overrightarrow{i^{(n)}}$, assume that their sparse coefficients given the to-be-learned basis are $\overrightarrow{c^{(1)}},\overrightarrow{c^{(2)}},...,\overrightarrow{c^{(n)}}$, the basis $\overrightarrow{b^{(1)}},\overrightarrow{b^{(2)}},...,\overrightarrow{c^{(m)}}$ that form the learned dictionary is the solution to the optimization problem:
-\[\mbox{minimize}\sum_{i=1}^{m}\]
+\subsubsection{Inhibitive Feature Selection (IFS) Algorithm}
+Dictionary as an overcomplete basis comes as a natural result under sparsity constraints. Given a training set of $n$ input image patches $\overrightarrow{i^{(1)}},\overrightarrow{i^{(2)}},...,\overrightarrow{i^{(n)}}$, assume that their sparse coefficients given the to-be-learned basis are $\overrightarrow{c^{(1)}},\overrightarrow{c^{(2)}},...,\overrightarrow{c^{(n)}}$, the basis $\overrightarrow{b^{(1)}},\overrightarrow{b^{(2)}},...,\overrightarrow{b^{(m)}}$ that form the learned dictionary is the solution to the optimization problem:
+\[\mbox{minimize}\sum_{j=1}^{n}\Vert \overrightarrow{i^{(j)}}-\sum_{k=1}^{m}\overrightarrow{b^{(k)}}c_k^{(j)}\Vert^2 + \beta \sum_{j=1}^{n}\sum_{k=1}^{m}\phi(c_k^{(j)})\]
+\[\mbox{subject to}\;\;\;\;\; \Vert\overrightarrow{b^{(k)}}\Vert^2 \leq \delta,\; \forall k=1,...,m\]
+Sparsity constraint (the second term) makes it more optimal to reconstruct each training image within certain accuracy using as few features from the dictionary as possible, thus effectively extracting the most representative features, not orthogonal features, out of the training database. This constraint is reasonable because features actually reside in very-high-dimensional vector space(s); what we try to capture in the dictionary are already their projections. A projected feature is not necessarily independent from other features' projections. In other words, features that are only slightly different in the relatively low dimensional vector space may be the main cause of their \emph{non}-similarity.
 
-Sparsity constraint makes it more optimal to reconstruct each training image within certain accuracy using as few features from the dictionary as possible, thus effectively extracting the most representative features, not orthogonal features, out of the training database. This constraint is reasonable because features actually reside in very-high-dimensional vector space(s); what we try to capture in the dictionary are already their projections. A projected feature is not necessarily independent from other features' projections. In other words, features that are only slightly different in the relatively low dimensional vector space may be the main cause of their \emph{non}-similarity.
+As we use projection as our efficient way of gauging each basis's relevance with the (image) patch at hand, we are also confronted with the problem that projecting onto similar bases lead to similar strength of response. Considering the theory of sparse coding, only one of them should be selected. We choose the one with the highest response (i.e. with the longest projected length) \emph{and subtract this component from the input vector}, to form the vector used in the next projection onto the dictionary. Iteratively, we can filter out the top $n$ strong responsive features as our hash value for each patch vector, where $n$ is flexible to the application at hand. Though we came to the \emph{subtraction} from a mathematical viewpoint, this coincides well with the inhibitive nature between neurons with similar receptive field.
 
--Robustness vs entropy: when two elements are selected together with high probability, one of them becomes redundant as it provides merely any extra information. But this should not be the case.
-Since our retrieval framework encode the image pattern of natural images into sparsity-based dictionary, we are motivated to select effective feature, especially those have high response to patches of natural images. Inspired by localitive sensitive hashing proposed by (Andoni et al. 2008), where high dimensional data can be projected to lower dimensional space with similarity preserving promise, we propose our novel algorithm to find out the atom of feature pattern in the dictionary to perform our hash-based dimensional reduction.
-
-Firstly, we project our patches vector onto the atom of dictionary to get the highest values of the result for each vector of patches and have another zero array with the same size. We call those atoms strong responsive to the corresponding patches vector. Then, we set the value of each patches vector at corresponding atom of dictionary to be one.
-
-Secondly, we substract the strong responsive atom from the corresponding patches vector in order to select second strong responsive atom with respect to the corresponding patches vector.
-
-Iteratively, we will rank out the top n strong responsive atoms as our output for each patch vector. By this way, we can encode the raw data directly by the ranking of the response of corresponding atom based on sparsity based dictionary and we will show that the result has some effects consistent with our visual system.
 \begin{algorithm}[h]
   \caption{IFS Algorithm}
   \begin{algorithmic}[1]
@@ -118,15 +112,15 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
     \State $Data  \in k \times m;\ image\ patches  $
     \State $Dictionary \in m \times n;\ learned\ dictionary$
    	\State $Reduction \in m\times n;\ inhibitive\ parameter$
-    \State $Projection = Data\bullet Dictionary \in k \times n$    
+    \State $Projection = Data\cdot Dictionary \in k \times n$    
     \For{$i=1$; $i<n$; $i++$ }%
     	\State Get the maximum column value and ID for each row	$\in Projection$
     	 \ForAll { $p\in image\ patches$}
     	 	\State $V_p \in$ $\max$ \{ $basis\ w.r.t.\ image\ patch$ \}
-    	 	\State $Reduction(:,p)=V_p\bullet Dictionary( : , ID_{max}(p))$
+    	 	\State $Reduction(:,p)=V_p\cdot Dictionary( : , ID_{max}(p))$
          \EndFor
          \State $Data=Data - Reduction^T$
-         \State $Projection = Data\bullet Dictionary$
+         \State $Projection = Data\cdot Dictionary$
     \EndFor 
 
   \end{algorithmic}
@@ -140,6 +134,8 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
 \end{figure}
 
 \subsubsection{Synaptic Plasticity Reactivation Scoring}
+Recall that the 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{algorithm}[h]
@@ -159,7 +155,6 @@ Iteratively, we will rank out the top n strong responsive atoms as our output fo
   \end{algorithmic}
 \end{algorithm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%{Response Reactivation Scoring}
 \begin{figure}[!ht]
 		\centering
 		\includegraphics[width=.4\textwidth]{figures_dir/temp_algorithm2.png}
@@ -211,9 +206,6 @@ Due to the state of the art working under different framework from us,  we compa
 	\label{random 100 queries}
 	
 \end{figure}
-
-
-
 
 \section{Conclusion}
 Rather than traditional human-turned feature extraction our cognitive system based on sparse coding successfully combine proposed novel auto-learned feature selection algorithm with sparsity-based dictionary to create ouw own discriminative code to retrieve natural images with high performance. The sparsity-based dictionary which capture basic elements consisting a natural image is a well learned structure to encode images. Although it needs more powerful algorithm and research in large-scale image retrieval or other big data, this is the promising direction of relative application.  
